@@ -23,14 +23,14 @@ public class ControllersManager_globle : MonoBehaviour
         if (devices.Count > 0)
         {
             leftController = devices[0];
-            Debug.Log(string.Format("Device name '{0}' with role '{1}'", leftController.name, leftController.role.ToString()));
+            Debug.Log(string.Format("Device name '{0}' with role '{1}'", leftController.name, leftController.characteristics.ToString()));
         }
 
         InputDevices.GetDevicesAtXRNode(XRNode.RightHand, devices);
         if (devices.Count > 0)
         {
             rightController = devices[0];
-            Debug.Log(string.Format("Device name '{0}' with role '{1}'", rightController.name, rightController.role.ToString()));
+            Debug.Log(string.Format("Device name '{0}' with role '{1}'", rightController.name, rightController.characteristics.ToString()));
         }
     }
 
@@ -70,23 +70,36 @@ public class ControllersManager_globle : MonoBehaviour
         return Rightprimary2DAxisValue;
     }
 
-    //[PunRPC]
-    //public void getNetworkRightGrip(float gripRightValue)
-    //{
-    //    this.gripRightValue = gripRightValue;
-    //}
+    [PunRPC]
 
-    //[PunRPC]
-    //public void getNetworkRightPrim(bool RightprimaryButtonValue)
-    //{
-    //    this.RightprimaryButtonValue = RightprimaryButtonValue;
-    //}
+    public void getNetworkRightGrip(float gripRightValue)
+    {
+        this.gripRightValue = gripRightValue;
+    }
 
-    //[PunRPC]
-    //public void getNetworkRightSec(bool RightsecondaryButtonValue)
-    //{
-    //    this.RightsecondaryButtonValue = RightsecondaryButtonValue;
-    //}
+    [PunRPC]
+    public void getNetworkRightTrigger(float triggerRightValue)
+    {
+        this.triggerRightValue = triggerRightValue;
+    }
+
+    [PunRPC]
+    public void getNetworkRightPri(bool RightprimaryButtonValue)
+    {
+        this.RightprimaryButtonValue = RightprimaryButtonValue;
+    }
+
+    [PunRPC]
+    public void getNetworkRightSec(bool RightsecondaryButtonValue)
+    {
+        this.RightsecondaryButtonValue = RightsecondaryButtonValue;
+    }
+
+    [PunRPC]
+    public void getNetworkRightPrimary2DAxis(Vector2 Rightprimary2DAxisValue)
+    {
+        this.Rightprimary2DAxisValue = Rightprimary2DAxisValue;
+    }
 
     //-------------------------------------------------------//
 
@@ -99,8 +112,8 @@ public class ControllersManager_globle : MonoBehaviour
 
     public float getLeftTrigger()
     {
-       leftController.TryGetFeatureValue(CommonUsages.trigger, out float triggerLeftValue);
-       return triggerLeftValue;
+        leftController.TryGetFeatureValue(CommonUsages.trigger, out float triggerLeftValue);
+        return triggerLeftValue;
     }
 
     public bool getLeftPrimaryButton()
@@ -126,23 +139,35 @@ public class ControllersManager_globle : MonoBehaviour
         return Leftprimary2DAxisValue;
     }
 
-    //[PunRPC]
-    //public void getNetworkLeftGrip(float gripLeftValue)
-    //{
-    //    this.gripLeftValue = gripLeftValue;
-    //}
+    [PunRPC]
+    public void getNetworkLeftGrip(float gripLeftValue)
+    {
+        this.gripLeftValue = gripLeftValue;
+    }
 
-    //[PunRPC]
-    //public void getNetworkLeftPrim(bool LeftprimaryButtonValue)
-    //{
-    //    this.LeftprimaryButtonValue = LeftprimaryButtonValue;
-    //}
+    [PunRPC]
+    public void getNetworkLeftTrigger(float triggerLeftValue)
+    {
+        this.triggerLeftValue = triggerLeftValue;
+    }
 
-    //[PunRPC]
-    //public void getNetworkLeftSec(bool LeftsecondaryButtonValue)
-    //{
-    //    this.LeftsecondaryButtonValue = LeftsecondaryButtonValue;
-    //}
+    [PunRPC]
+    public void getNetworkLeftPri(bool LeftprimaryButtonValue)
+    {
+        this.LeftprimaryButtonValue = LeftprimaryButtonValue;
+    }
 
-    //-------------------------------------------------------//
+    [PunRPC]
+    public void getNetworkLeftSec(bool LeftsecondaryButtonValue)
+    {
+        this.LeftsecondaryButtonValue = LeftsecondaryButtonValue;
+    }
+
+    [PunRPC]
+    public void getNetworkLeftPrimary2DAxis(Vector2 Leftprimary2DAxisValue)
+    {
+        this.Leftprimary2DAxisValue = Leftprimary2DAxisValue;
+
+        //-------------------------------------------------------//
+    }
 }

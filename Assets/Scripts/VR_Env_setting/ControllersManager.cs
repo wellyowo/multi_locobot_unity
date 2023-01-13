@@ -20,14 +20,14 @@ public class ControllersManager : MonoBehaviour
         if (devices.Count > 0)
         {
             leftController = devices[0];
-            Debug.Log(string.Format("Device name '{0}' with role '{1}'", leftController.name, leftController.role.ToString()));
+            Debug.Log(string.Format("Device name '{0}' with role '{1}'", leftController.name, leftController.characteristics.ToString()));
         }
 
         InputDevices.GetDevicesAtXRNode(XRNode.RightHand, devices);
         if (devices.Count > 0)
         {
             rightController = devices[0];
-            Debug.Log(string.Format("Device name '{0}' with role '{1}'", rightController.name, rightController.role.ToString()));
+            Debug.Log(string.Format("Device name '{0}' with role '{1}'", rightController.name, rightController.characteristics.ToString()));
         }
     }
 
