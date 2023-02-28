@@ -239,7 +239,7 @@ Rigidbody:
   m_Mass: 0.0795745
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 33607760}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0795745
   CenterOfMass: {x: 0.0000125977285, y: 0.0092307, z: 0.03115728}
   InertiaTensor: {x: 0.00003187873, y: 0.000044718417, z: 0.000051076746}
@@ -715,7 +715,7 @@ Rigidbody:
   m_Mass: 0.18746427
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 76728631}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.18746427
   CenterOfMass: {x: -3.0931098e-15, y: -0.000000012621888, z: 0.11782983}
   InertiaTensor: {x: 0.000039414237, y: 0.0007252104, z: 0.000737165}
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 119967181}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 1.194
   CenterOfMass: {x: 0.0000436401, y: 0.0111375, z: -0.00713731}
   InertiaTensor: {x: 0.004312, y: 0.006017, z: 0.001908}
@@ -1356,7 +1356,7 @@ Rigidbody:
   m_Mass: 1.194
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -1722,7 +1722,7 @@ Rigidbody:
   m_Mass: 0.0795745
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -1820,7 +1820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 127533912}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0795745
   CenterOfMass: {x: 0.0000125977285, y: 0.0092307, z: 0.03115728}
   InertiaTensor: {x: 0.00003187873, y: 0.000044718417, z: 0.000051076746}
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 153468513}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1968,7 +1968,7 @@ Rigidbody:
   m_Mass: 0.001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -2035,7 +2035,7 @@ Rigidbody:
   m_Mass: 0.379673
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -2085,7 +2085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 156171816}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.379673
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -2107,38 +2107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBaseLink: 0
---- !u!1 &161304719
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 161304720}
-  m_Layer: 0
-  m_Name: locobot_camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &161304720
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161304719}
-  m_LocalRotation: {x: 0.5224425, y: 0.4975747, z: 0.49603027, w: 0.48314315}
-  m_LocalPosition: {x: -0.0283302, y: 0.4797385, z: -0.05248966}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1435243777}
-  - {fileID: 1362628628}
-  m_Father: {fileID: 2073055315}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.642, y: 92.353, z: 92.177}
 --- !u!1 &164377096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2156,7 @@ Rigidbody:
   m_Mass: 2.091937
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -2238,7 +2206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 164377098}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 2.091937
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -3019,7 +2987,7 @@ Rigidbody:
   m_Mass: 0.21248275
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -3117,7 +3085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 216431164}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.21248275
   CenterOfMass: {x: 2.3093005e-10, y: 0.13429679, z: 0.009597559}
   InertiaTensor: {x: 0.00007434291, y: 0.0011907746, z: 0.0012235033}
@@ -4693,7 +4661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 436169088}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.012193146
   CenterOfMass: {x: -0.0064383345, y: -0.0048328023, z: 0.01001916}
   InertiaTensor: {x: 0.000001, y: 0.000002779361, z: 0.0000031324064}
@@ -4713,7 +4681,7 @@ Rigidbody:
   m_Mass: 0.012193146
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -4832,7 +4800,7 @@ GameObject:
   - component: {fileID: 478612843}
   - component: {fileID: 478612842}
   m_Layer: 0
-  m_Name: 'Robot Connector (Fake) '
+  m_Name: 'Robot Connector (Huamn) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4869,27 +4837,27 @@ MonoBehaviour:
   JointNames:
   - wheel_left_joint
   - wheel_right_joint
-  - 
-  - 
-  - 
-  - 
-  - 
+  - joint_1
+  - joint_2
+  - joint_3
+  - joint_4
+  - joint_5
   - joint_6
   - joint_7
   - head_pan_joint
   - head_tilt_joint
   JointStateWriters:
-  - {fileID: 1441546590}
-  - {fileID: 527294456}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1455472760}
-  - {fileID: 436169090}
-  - {fileID: 950903921}
-  - {fileID: 1921473605}
+  - {fileID: 2090288469}
+  - {fileID: 886751915}
+  - {fileID: 1183718339}
+  - {fileID: 1095954247}
+  - {fileID: 76728639}
+  - {fileID: 2113485683}
+  - {fileID: 127533920}
+  - {fileID: 1196128676}
+  - {fileID: 1678618986}
+  - {fileID: 1261733715}
+  - {fileID: 1309950466}
 --- !u!114 &478612843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4902,7 +4870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae1d8da5a3c0644bb98a540ca597dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /joint_state_test
+  Topic: /joint_states_test
   JointStateReaders:
   - {fileID: 2090288468}
   - {fileID: 886751914}
@@ -4931,7 +4899,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.0.1:9090
+  RosBridgeServerUrl: ws://10.42.0.2:9090
 --- !u!114 &478612845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5479,7 +5447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 527294454}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.001, y: 0.001, z: 0.001}
@@ -5499,7 +5467,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -5871,7 +5839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 548931423}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.020262264
   CenterOfMass: {x: -0.0000000017064118, y: -0.0050957906, z: -0.0000000015918252}
   InertiaTensor: {x: 0.000004057735, y: 0.0000047105823, z: 0.000007923789}
@@ -5891,7 +5859,7 @@ Rigidbody:
   m_Mass: 0.020262264
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -6101,7 +6069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 554501623}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.038192566
   CenterOfMass: {x: -0.0016817147, y: 0.0000024982967, z: -0.013272298}
   InertiaTensor: {x: 0.0000036654549, y: 0.000024688548, z: 0.000024861189}
@@ -6121,7 +6089,7 @@ Rigidbody:
   m_Mass: 0.038192566
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -7152,7 +7120,7 @@ Rigidbody:
   m_Mass: 2.091937
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -7202,7 +7170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 611901283}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 2.091937
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -7276,7 +7244,7 @@ Rigidbody:
   m_Mass: 0.1198612
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -7374,7 +7342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 612032302}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.1198612
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -7490,7 +7458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 615753234}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.0001, y: 0.0001, z: 0.0001}
@@ -7510,7 +7478,7 @@ Rigidbody:
   m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -7580,7 +7548,7 @@ Rigidbody:
   m_Mass: 0.18746427
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -7678,7 +7646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 619670145}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.18746427
   CenterOfMass: {x: -3.0931098e-15, y: -0.000000012621888, z: 0.11782983}
   InertiaTensor: {x: 0.000039414237, y: 0.0007252104, z: 0.000737165}
@@ -8123,37 +8091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GeometryType: 1
---- !u!1 &677752844
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 677752845}
-  m_Layer: 0
-  m_Name: target_obj1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &677752845
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677752844}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2134243144}
-  m_Father: {fileID: 1167791209}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683023268
 GameObject:
   m_ObjectHideFlags: 0
@@ -10421,7 +10358,7 @@ Rigidbody:
   m_Mass: 0.27854
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -10471,7 +10408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 855052427}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.27854
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -10738,7 +10675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 886751912}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -3.0172642e-10, y: -5.613453e-11, z: -1.1195699e-10}
   InertiaTensor: {x: 0.0000033938254, y: 0.0000060803864, z: 0.0000033938268}
@@ -10758,7 +10695,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -11163,7 +11100,7 @@ Rigidbody:
   m_Mass: 0.01827692
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -11261,7 +11198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 950903914}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01827692
   CenterOfMass: {x: 2.970714e-17, y: 0.022087626, z: -1.3530843e-16}
   InertiaTensor: {x: 0.0000071338604, y: 0.00000783292, z: 0.000013224385}
@@ -11556,7 +11493,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.0.1:9090
+  RosBridgeServerUrl: ws://10.42.0.2:9090
 --- !u!114 &964843822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11677,7 +11614,7 @@ Rigidbody:
   m_Mass: 0.27854
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -11727,7 +11664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 989666165}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.27854
   CenterOfMass: {x: 0.0000435988, y: 0.002375, z: -0.0503576}
   InertiaTensor: {x: 0.0008918999, y: 0.001552, z: 0.002442}
@@ -11924,7 +11861,7 @@ Rigidbody:
   m_Mass: 2.4
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -11943,7 +11880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1018397100}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 2.4
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -12510,7 +12447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058453214}
   m_Layer: 0
-  m_Name: Fake_locobot
+  m_Name: Human_locobot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12848,7 +12785,7 @@ Rigidbody:
   m_Mass: 0.21248275
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -12946,7 +12883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1095954239}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.21248275
   CenterOfMass: {x: 2.3093005e-10, y: 0.13429679, z: 0.009597559}
   InertiaTensor: {x: 0.00007434291, y: 0.0011907746, z: 0.0012235033}
@@ -13086,7 +13023,7 @@ Rigidbody:
   m_Mass: 0.27854
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -13136,7 +13073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1129215179}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.27854
   CenterOfMass: {x: 0.0000435988, y: 0.002375, z: -0.0503576}
   InertiaTensor: {x: 0.0008918999, y: 0.001552, z: 0.002442}
@@ -13462,7 +13399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1157404656}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.0001, y: 0.0001, z: 0.0001}
@@ -13482,7 +13419,7 @@ Rigidbody:
   m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -13582,7 +13519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1160880478}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.001, y: 0.001, z: 0.001}
@@ -13602,7 +13539,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -13686,37 +13623,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 928513771743654858, guid: 56bb013bce4348944bedb7d19d1c9521, type: 3}
   m_PrefabInstance: {fileID: 1164079129}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1167791208
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1167791209}
-  m_Layer: 0
-  m_Name: locobot_camera_side
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1167791209
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167791208}
-  m_LocalRotation: {x: 0.5224425, y: 0.4975747, z: 0.49603027, w: 0.48314315}
-  m_LocalPosition: {x: -0.0283302, y: 0.4797385, z: -0.05248966}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 677752845}
-  m_Father: {fileID: 2073055315}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0.642, y: 92.353, z: 92.177}
 --- !u!1 &1173431875
 GameObject:
   m_ObjectHideFlags: 8
@@ -13815,7 +13721,7 @@ Rigidbody:
   m_Mass: 0.1198612
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -13913,7 +13819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1183718331}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.1198612
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -13966,7 +13872,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183718329}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 484718f2c4ab849829491782b508958a, type: 3}
   m_Name: 
@@ -14089,7 +13995,7 @@ Transform:
   m_LocalScale: {x: 0.12, y: 1, z: 0.12}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1 &1196128667
 GameObject:
@@ -14272,7 +14178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1196128673}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.012193146
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -14292,7 +14198,7 @@ Rigidbody:
   m_Mass: 0.012193146
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -14588,132 +14494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9090ae501ff9cd459bec5271d40249c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1236701012
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1236701013}
-  - component: {fileID: 1236701015}
-  - component: {fileID: 1236701014}
-  - component: {fileID: 1236701018}
-  - component: {fileID: 1236701017}
-  - component: {fileID: 1236701016}
-  m_Layer: 0
-  m_Name: default
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1236701013
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236701012}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.0012, y: 0.0037, z: 0.0913}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_Children: []
-  m_Father: {fileID: 1435243777}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
---- !u!23 &1236701014
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236701012}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 7491414079149843637, guid: 8b945edb2d519c245a97580f7e58e34f, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1236701015
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236701012}
-  m_Mesh: {fileID: -2432090755550338912, guid: 8b945edb2d519c245a97580f7e58e34f, type: 3}
---- !u!114 &1236701016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236701012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b4bec84e63548e4e9b3f61c0bacef37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObj: {fileID: 0}
---- !u!65 &1236701017
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236701012}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.330138, y: 5.28264, z: 2.393629}
-  m_Center: {x: 0.0004234284, y: 0.032866605, z: 0.0000000028815266}
---- !u!54 &1236701018
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236701012}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1240136639
 GameObject:
   m_ObjectHideFlags: 0
@@ -14857,7 +14637,7 @@ Rigidbody:
   m_Mass: 0.01827692
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -14955,7 +14735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1261733707}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01827692
   CenterOfMass: {x: 2.970714e-17, y: 0.022087626, z: -1.3530843e-16}
   InertiaTensor: {x: 0.0000071338604, y: 0.00000783292, z: 0.000013224385}
@@ -15609,7 +15389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1297810021}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 1.194
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -15629,7 +15409,7 @@ Rigidbody:
   m_Mass: 1.194
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -15876,7 +15656,7 @@ Rigidbody:
   m_Mass: 0.05476777
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -15974,7 +15754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1309950458}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.05476777
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -16325,37 +16105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46398bc5d6905ad429a6d2d973afe002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1362628627
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1362628628}
-  m_Layer: 0
-  m_Name: target_obj2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1362628628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362628627}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1819021483}
-  m_Father: {fileID: 161304720}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362856102
 GameObject:
   m_ObjectHideFlags: 0
@@ -16438,7 +16187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1362856107}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.0001, y: 0.0001, z: 0.0001}
@@ -16458,7 +16207,7 @@ Rigidbody:
   m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -16749,7 +16498,7 @@ Rigidbody:
   m_Mass: 0.060592175
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -16847,7 +16596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1394907649}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.060592175
   CenterOfMass: {x: -0.000049864473, y: 0.011426695, z: 0.042941004}
   InertiaTensor: {x: 0.000017307795, y: 0.000020894317, z: 0.000020978949}
@@ -17178,37 +16927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GeometryType: 3
---- !u!1 &1435243776
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1435243777}
-  m_Layer: 0
-  m_Name: target_obj1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1435243777
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435243776}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1236701013}
-  m_Father: {fileID: 161304720}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1441546582
 GameObject:
   m_ObjectHideFlags: 0
@@ -17326,7 +17044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1441546588}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -17346,7 +17064,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -17556,7 +17274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1455472758}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.012193146
   CenterOfMass: {x: 0.008438353, y: -0.0048328023, z: 0.010019146}
   InertiaTensor: {x: 0.000001, y: 0.0000027793603, z: 0.0000031324066}
@@ -17576,7 +17294,7 @@ Rigidbody:
   m_Mass: 0.012193146
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -18221,37 +17939,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46398bc5d6905ad429a6d2d973afe002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1491873550
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1491873551}
-  m_Layer: 0
-  m_Name: locobot_base
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1491873551
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491873550}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2073055315}
-  m_Father: {fileID: 1559023286}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1497754320
 GameObject:
   m_ObjectHideFlags: 0
@@ -19050,7 +18737,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531602642}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88f1220cec6142c4e93f8317b1eb7505, type: 3}
   m_Name: 
@@ -19069,7 +18756,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531602642}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b90b0dd514a670340961ffe70fa0ff60, type: 3}
   m_Name: 
@@ -19151,7 +18838,7 @@ Rigidbody:
   m_Mass: 2.4
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -19170,7 +18857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1534611747}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 2.4
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -19416,59 +19103,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1902258177}
---- !u!1 &1559023284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1559023286}
-  - component: {fileID: 1559023285}
-  m_Layer: 0
-  m_Name: Perception object
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1559023285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559023284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb20a6509eec2a9419eee760bffdb0a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateIP: {fileID: 1565779966}
-  obj1: {fileID: 1435243776}
-  obj2: {fileID: 1362628627}
-  locobot_arm: {fileID: 2073055314}
-  locobot_camera: {fileID: 161304719}
-  locobot_camera_side: {fileID: 1167791208}
-  offset_x: 0
-  offset_y: 0
-  offset_z: 0
---- !u!4 &1559023286
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559023284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1491873551}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562188825
 GameObject:
   m_ObjectHideFlags: 8
@@ -19814,7 +19448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1592620431}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -19834,7 +19468,7 @@ Rigidbody:
   m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -20070,7 +19704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1637377117}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.020262264
   CenterOfMass: {x: -0.0000000017064118, y: -0.0050957906, z: -0.0000000015918252}
   InertiaTensor: {x: 0.000004057735, y: 0.0000047105823, z: 0.000007923789}
@@ -20090,7 +19724,7 @@ Rigidbody:
   m_Mass: 0.020262264
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -20436,7 +20070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1667216991}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.001, y: 0.001, z: 0.001}
@@ -20456,7 +20090,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -20700,7 +20334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1678618983}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.012193146
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -20720,7 +20354,7 @@ Rigidbody:
   m_Mass: 0.012193146
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -20960,7 +20594,7 @@ Rigidbody:
   m_Mass: 0.379673
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -21010,7 +20644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1687891628}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.379673
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -21203,7 +20837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1709461574}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.000001, y: 0.0001, z: 0.0001}
@@ -21223,7 +20857,7 @@ Rigidbody:
   m_Mass: 0.001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -21451,7 +21085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1722371792}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 0.0001, y: 0.0001, z: 0.0001}
@@ -21471,7 +21105,7 @@ Rigidbody:
   m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -21771,7 +21405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1737711951}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.0001
   CenterOfMass: {x: -0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -21791,7 +21425,7 @@ Rigidbody:
   m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -22087,7 +21721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1757857244}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -1.4655283e-10, y: -4.7959598e-11, z: -5.437911e-11}
   InertiaTensor: {x: 0.0000009753708, y: 0.0000014344748, z: 0.0000009753711}
@@ -22107,7 +21741,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -23037,7 +22671,7 @@ Rigidbody:
   m_Mass: 0.27854
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -23087,7 +22721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1798019374}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.27854
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -23123,7 +22757,7 @@ GameObject:
   - component: {fileID: 1800598464}
   - component: {fileID: 1800598463}
   m_Layer: 0
-  m_Name: fake_locobot
+  m_Name: huamn_locobot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23350,132 +22984,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4333614249195620005, guid: 2b92d1edac177b8458c5a2d5fb970bda, type: 3}
   m_PrefabInstance: {fileID: 1816934084}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1819021482
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1819021483}
-  - component: {fileID: 1819021485}
-  - component: {fileID: 1819021484}
-  - component: {fileID: 1819021488}
-  - component: {fileID: 1819021487}
-  - component: {fileID: 1819021486}
-  m_Layer: 0
-  m_Name: default
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1819021483
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819021482}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_Children: []
-  m_Father: {fileID: 1362628628}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
---- !u!23 &1819021484
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819021482}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 7491414079149843637, guid: 263e39a55242e6440b7faa7e87163b17, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1819021485
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819021482}
-  m_Mesh: {fileID: -2432090755550338912, guid: 263e39a55242e6440b7faa7e87163b17, type: 3}
---- !u!114 &1819021486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819021482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b4bec84e63548e4e9b3f61c0bacef37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObj: {fileID: 0}
---- !u!65 &1819021487
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819021482}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 24.988073, y: 4.983688, z: 2.8492696}
-  m_Center: {x: 0.00000023832145, y: -0.0004420288, z: -0.007425012}
---- !u!54 &1819021488
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819021482}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1821584135
 GameObject:
   m_ObjectHideFlags: 8
@@ -23777,7 +23285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1868347508}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: -1.4655283e-10, y: -4.7959598e-11, z: -5.437911e-11}
   InertiaTensor: {x: 0.0000009753708, y: 0.0000014344748, z: 0.0000009753711}
@@ -23797,7 +23305,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -23898,120 +23406,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1d8978b1c2386024788a539d1eb67c27, type: 2}
---- !u!1 &1877910060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1877910065}
-  - component: {fileID: 1877910064}
-  - component: {fileID: 1877910063}
-  - component: {fileID: 1877910062}
-  - component: {fileID: 1877910061}
-  m_Layer: 0
-  m_Name: Camera view_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1877910061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877910060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef6e2677fa36b0c46a9f6d8bd354c686, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Topic: /camera/color/image_raw/compressed
-  TimeStep: 0
-  meshRenderer: {fileID: 1877910063}
---- !u!114 &1877910062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877910060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff98778ae051cfd40a6e4effdf851ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SecondsTimeout: 10
-  Serializer: 0
-  protocol: 0
-  RosBridgeServerUrl: ws://10.42.0.2:9090
---- !u!23 &1877910063
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877910060}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1877910064
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877910060}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1877910065
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877910060}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.44799995, y: 0.69, z: 3.24}
-  m_LocalScale: {x: 0.12, y: 1, z: 0.12}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1 &1879101986
 GameObject:
   m_ObjectHideFlags: 8
@@ -25160,7 +24554,7 @@ Rigidbody:
   m_Mass: 0.05476777
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -25258,7 +24652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1921473598}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.05476777
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -26395,38 +25789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GeometryType: 3
---- !u!1 &2073055314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2073055315}
-  m_Layer: 0
-  m_Name: locobot_arm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2073055315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073055314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0001868025, y: 0.1075625, z: 0.09729982}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 161304720}
-  - {fileID: 1167791209}
-  m_Father: {fileID: 1491873551}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073789181
 GameObject:
   m_ObjectHideFlags: 0
@@ -26635,7 +25997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 2090288466}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.01
   CenterOfMass: {x: 0, y: 0, z: 0}
   InertiaTensor: {x: 1, y: 1, z: 1}
@@ -26655,7 +26017,7 @@ Rigidbody:
   m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -27121,7 +26483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 2109463030}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.038192566
   CenterOfMass: {x: -0.0016817147, y: 0.0000024982967, z: -0.013272298}
   InertiaTensor: {x: 0.0000036654549, y: 0.000024688548, z: 0.000024861189}
@@ -27141,7 +26503,7 @@ Rigidbody:
   m_Mass: 0.038192566
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -27212,7 +26574,7 @@ Rigidbody:
   m_Mass: 0.060592175
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -27310,7 +26672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 2113485675}
   DisplayInertiaGizmo: 0
-  rigidbodyDataSource: 0
+  rigidbodyDataSource: 1
   Mass: 0.060592175
   CenterOfMass: {x: -0.000049864473, y: 0.011426695, z: 0.042941004}
   InertiaTensor: {x: 0.000017307795, y: 0.000020894317, z: 0.000020978949}
@@ -27576,87 +26938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46398bc5d6905ad429a6d2d973afe002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2134243143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2134243144}
-  - component: {fileID: 2134243146}
-  - component: {fileID: 2134243145}
-  m_Layer: 0
-  m_Name: default
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2134243144
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134243143}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_Children: []
-  m_Father: {fileID: 677752845}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
---- !u!23 &2134243145
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134243143}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 7491414079149843637, guid: 8b945edb2d519c245a97580f7e58e34f, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2134243146
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134243143}
-  m_Mesh: {fileID: -2432090755550338912, guid: 8b945edb2d519c245a97580f7e58e34f, type: 3}
 --- !u!1001 &2135727945
 PrefabInstance:
   m_ObjectHideFlags: 0
