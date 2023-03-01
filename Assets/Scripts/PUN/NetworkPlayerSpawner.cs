@@ -33,7 +33,7 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
         if (!firstPlayer)
         {
 
-            spawnPlayerprefab = PhotonNetwork.Instantiate("Fake locobot", transform.position, transform.rotation);
+            spawnPlayerprefab = PhotonNetwork.Instantiate("Human_locobot_pun", transform.position, transform.rotation);
         }
         else
         {
