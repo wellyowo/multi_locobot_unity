@@ -9,7 +9,8 @@ public class right_button_function : MonoBehaviour
 {
     RosSocket rosSocket;
     public GameObject updateIP;
-    public ControllersManager controllerInput;
+    public GameObject controllerInput; // input
+    public bool PUN_flag = false;
 
     public string Topic_name_pub_primary_button = "/vr/right/primarybutton"; //topic name
     public string Topic_name_pub_secondary_button = "/vr/right/secondarybutton"; //topic name
@@ -28,8 +29,19 @@ public class right_button_function : MonoBehaviour
 
     void Update()
     {
+        if (PUN_flag)
+        {
+            RightprimaryButtonValue = controllerInput.GetComponent<ControllersManager_globle>().getRightPrimaryButton();
+            RightsecondaryButtonValue = controllerInput.GetComponent<ControllersManager_globle>().getRightSecondaryButton();
+
+        }
+        else
+        {
+            RightprimaryButtonValue = controllerInput.GetComponent<ControllersManager>().getRightPrimaryButton();
+            RightsecondaryButtonValue = controllerInput.GetComponent<ControllersManager>().getRightSecondaryButton();
+        }
+
         //------------------Pub_Primary Buttom------------------------------//
-        RightprimaryButtonValue = controllerInput.GetComponent<ControllersManager>().getRightPrimaryButton();
         std_msgs.Bool message_p = new std_msgs.Bool
         {
             data = RightprimaryButtonValue
@@ -38,8 +50,6 @@ public class right_button_function : MonoBehaviour
         rosSocket.Publish(Rightprimary_button, message_p);
 
         //------------------Pub_Secondary Buttom------------------------------//
-
-        RightsecondaryButtonValue = controllerInput.GetComponent<ControllersManager>().getRightSecondaryButton();
         std_msgs.Bool message_s = new std_msgs.Bool
         {
             data = RightsecondaryButtonValue

@@ -9,7 +9,7 @@ public class right_grip_function : MonoBehaviour
     public GameObject controllerInput; // input
     public GameObject ConnectorOutput; // output
 
-
+    public bool PUN_flag = false;
 
     //visual aids -- end-effector trajector
     public Material lineMaterial;
@@ -22,16 +22,22 @@ public class right_grip_function : MonoBehaviour
 
     private float rightgripValue;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        rightgripValue = controllerInput.GetComponent<ControllersManager>().getRightGrip();
+        if (PUN_flag)
+        {
+            rightgripValue = controllerInput.GetComponent<ControllersManager_globle>().getRightGrip();
+        }
+        else
+        {
+            rightgripValue = controllerInput.GetComponent<ControllersManager>().getRightGrip();
+        }
+
         trajectoryMode(rightgripValue);
 
     }

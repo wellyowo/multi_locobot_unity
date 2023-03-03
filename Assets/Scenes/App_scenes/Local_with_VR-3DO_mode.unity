@@ -18630,7 +18630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightControllerSource: {fileID: 1531602643}
   controllerInput: {fileID: 1769899861}
-  ConnectorOutput: {fileID: 478612840}
+  ConnectorOutput: {fileID: 0}
   lineMaterial: {fileID: 2100000, guid: cc5368b74c17db147b59656dee993f09, type: 2}
   startWidth: 0.05
   endWidth: 0.05
