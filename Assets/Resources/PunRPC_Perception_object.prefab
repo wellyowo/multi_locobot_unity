@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927281995505573}
+  - component: {fileID: 6346812863484105387}
   m_Layer: 0
   m_Name: locobot_camera
   m_TagString: Untagged
@@ -32,6 +33,22 @@ Transform:
   m_Father: {fileID: 1412927283907387238}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.642, y: 92.353, z: 92.177}
+--- !u!114 &6346812863484105387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927281995505594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927282539151161
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +58,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927282539151160}
+  - component: {fileID: 5754175406424221979}
   m_Layer: 0
   m_Name: target_obj1
   m_TagString: Untagged
@@ -63,6 +81,22 @@ Transform:
   m_Father: {fileID: 1412927283270425436}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5754175406424221979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927282539151161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283070959713
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,6 +111,7 @@ GameObject:
   - component: {fileID: 1412927283070959727}
   - component: {fileID: 1412927283070959724}
   - component: {fileID: 1412927283070959725}
+  - component: {fileID: 8795582464710387333}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -189,6 +224,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObj: {fileID: 0}
+--- !u!114 &8795582464710387333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283070959713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283270425437
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927283270425436}
+  - component: {fileID: 548599968518163323}
   m_Layer: 0
   m_Name: locobot_camera_side
   m_TagString: Untagged
@@ -220,6 +272,22 @@ Transform:
   m_Father: {fileID: 1412927283907387238}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0.642, y: 92.353, z: 92.177}
+--- !u!114 &548599968518163323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283270425437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283353460795
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927283353460794}
+  - component: {fileID: 7008217582543856598}
   m_Layer: 0
   m_Name: locobot_base
   m_TagString: Untagged
@@ -251,6 +320,22 @@ Transform:
   m_Father: {fileID: 1412927283420545411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7008217582543856598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283353460795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283420545409
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,9 +346,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1412927283420545411}
   - component: {fileID: 5577401481486061968}
-  - component: {fileID: 4697445354819049772}
+  - component: {fileID: -8328548283932005278}
   m_Layer: 0
-  m_Name: Perception object
+  m_Name: PunRPC_Perception_object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,7 +390,7 @@ MonoBehaviour:
   offset_x: 0
   offset_y: 0
   offset_z: 0
---- !u!114 &4697445354819049772
+--- !u!114 &-8328548283932005278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,13 +399,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1412927283420545409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1412927283465396006
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927283465396001}
+  - component: {fileID: 6773488821311474313}
   m_Layer: 0
   m_Name: target_obj2
   m_TagString: Untagged
@@ -352,6 +444,22 @@ Transform:
   m_Father: {fileID: 1412927281995505573}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6773488821311474313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283465396006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283540105781
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927283540105780}
+  - component: {fileID: 3313594383013148197}
   m_Layer: 0
   m_Name: target_obj1
   m_TagString: Untagged
@@ -383,6 +492,22 @@ Transform:
   m_Father: {fileID: 1412927281995505573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3313594383013148197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283540105781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283680616351
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +522,7 @@ GameObject:
   - component: {fileID: 1412927283680616325}
   - component: {fileID: 1412927283680616346}
   - component: {fileID: 1412927283680616347}
+  - component: {fileID: 8633393595927292489}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -509,6 +635,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObj: {fileID: 0}
+--- !u!114 &8633393595927292489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283680616351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283907387239
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,6 +660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412927283907387238}
+  - component: {fileID: 1829158129596668250}
   m_Layer: 0
   m_Name: locobot_arm
   m_TagString: Untagged
@@ -541,6 +684,22 @@ Transform:
   m_Father: {fileID: 1412927283353460794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829158129596668250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283907387239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1412927283968374898
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +711,7 @@ GameObject:
   - component: {fileID: 1412927283968374909}
   - component: {fileID: 1412927283968374911}
   - component: {fileID: 1412927283968374908}
+  - component: {fileID: 8962405847836314438}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -622,3 +782,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8962405847836314438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412927283968374898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1

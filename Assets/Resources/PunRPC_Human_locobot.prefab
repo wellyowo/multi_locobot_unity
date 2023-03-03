@@ -9909,7 +9909,7 @@ GameObject:
   - component: {fileID: 801207650940819758}
   - component: {fileID: 7485974246687750861}
   m_Layer: 0
-  m_Name: Human_locobot_pun
+  m_Name: PunRPC_Human_locobot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
