@@ -605,7 +605,7 @@ MonoBehaviour:
   subscriber: {fileID: 69347220}
   pointSize: 1
   radius: 0.0025
-  offset: {fileID: 0}
+  offset: {fileID: 69347221}
 --- !u!114 &69347220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,10 +620,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rgbImageSub: {fileID: 833130450}
   depthImageSub: {fileID: 833130455}
-  fx: 613.5316
-  fy: 613.5283
-  cx: 313.1866
-  cy: 252.7499
+  fx: 610.8296
+  fy: 609.238
+  cx: 313.52026
+  cy: 247.24297
   height_start: 0
   height_end: 450
   width_start: 100
@@ -9699,7 +9699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6e2677fa36b0c46a9f6d8bd354c686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /camera/color/image_raw/compressed
+  Topic: /camera_left/color/image_raw/compressed
   TimeStep: 0
   meshRenderer: {fileID: 833130452}
 --- !u!114 &833130451
@@ -9793,7 +9793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8778a4c478b5b46ae21dae5e6449be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /camera/aligned_depth_to_color/image_raw/compressedDepth
+  Topic: /camera_left/aligned_depth_to_color/image_raw/compressedDepth
   TimeStep: 0
 --- !u!1001 &833682630
 PrefabInstance:
@@ -15035,7 +15035,7 @@ MonoBehaviour:
   subscriber: {fileID: 1259440940}
   pointSize: 1
   radius: 0.0025
-  offset: {fileID: 0}
+  offset: {fileID: 1259440938}
 --- !u!114 &1259440940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23914,7 +23914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6e2677fa36b0c46a9f6d8bd354c686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /camera/color/image_raw/compressed
+  Topic: /camera_right/color/image_raw/compressed
   TimeStep: 0
   meshRenderer: {fileID: 1877910063}
 --- !u!114 &1877910062
@@ -24008,7 +24008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8778a4c478b5b46ae21dae5e6449be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /camera/aligned_depth_to_color/image_raw/compressedDepth
+  Topic: /camera_right/aligned_depth_to_color/image_raw/compressedDepth
   TimeStep: 0
 --- !u!1 &1879101986
 GameObject:
@@ -25495,7 +25495,7 @@ MonoBehaviour:
   subscriber: {fileID: 1941488558}
   pointSize: 1
   radius: 0.0025
-  offset: {fileID: 0}
+  offset: {fileID: 1941488559}
 --- !u!114 &1941488558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25518,7 +25518,7 @@ MonoBehaviour:
   height_end: 460
   width_start: 15
   width_end: 625
-  depth_limit: 90
+  depth_limit: 900
 --- !u!4 &1941488559
 Transform:
   m_ObjectHideFlags: 0
@@ -25526,13 +25526,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941488556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.33292717, y: -0.257681, z: 1.2570511}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.497, z: 0.484}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1950796779
 PrefabInstance:
   m_ObjectHideFlags: 0
