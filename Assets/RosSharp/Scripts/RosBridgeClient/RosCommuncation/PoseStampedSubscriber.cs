@@ -34,6 +34,7 @@ namespace RosSharp.RosBridgeClient
         {
             if (isMessageReceived)
                 ProcessMessage();
+                // Debug.Log("Pose " + position + " " + rotation);
         }
 
         protected override void ReceiveMessage(MessageTypes.Geometry.PoseStamped message)
