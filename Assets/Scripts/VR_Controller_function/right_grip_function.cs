@@ -9,8 +9,6 @@ public class right_grip_function : MonoBehaviour
     public GameObject controllerInput; // input
     public GameObject ConnectorOutput; // output
 
-
-
     //visual aids -- end-effector trajector
     public Material lineMaterial;
     public float startWidth = 0.05f, endWidth = 0.05f;

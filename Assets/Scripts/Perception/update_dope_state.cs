@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class update_dope_state : MonoBehaviour
 {
-    public GameObject targetObj;
+    // public GameObject targetObj;
     private Rigidbody rb;
     private GameObject controllers;
     private Transform rightConPos;
