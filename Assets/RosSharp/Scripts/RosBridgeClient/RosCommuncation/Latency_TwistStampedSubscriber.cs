@@ -33,13 +33,15 @@ namespace RosSharp.RosBridgeClient
         private Vector3 angularVelocity;
         private double latency, latency_count = 0;
         private uint count, i = 0;
-        private List<double> myList = new List<double>() {};
+        private List<string> myList = new List<string>() {};
         private MessageTypes.Geometry.TwistStamped local_TwistStamped = new MessageTypes.Geometry.TwistStamped();
         private bool isMessageReceived;
         string formatString = "{0:G" + 5 + "}\t{1:G" + 5 + "}";
+        private string time = "";
         protected override void Start()
         {
-            filename = Application.dataPath + "/" + filename + ".csv";
+            time = System.DateTime.Now.ToString("HH_mm_ss");
+            filename = Application.dataPath + "/Latency/" + filename+"_"+ time+ ".csv";
             base.Start();
 
         }
@@ -64,17 +66,18 @@ namespace RosSharp.RosBridgeClient
             latency_count += latency;
             i = message.header.seq;
             isMessageReceived = true;
-            myList.Add(latency);
-            if(myList.Count >= 2000){
-                StreamWriter writer = new StreamWriter(filename, false);
-                foreach(double number in myList){
-                    writer.WriteLine(number);
-                }
-                Debug.Log("finish");
-                writer.Close();
-                myList.Clear();
+            string time_now = System.DateTime.Now.ToString("HH_mm_ss.fff");
+            myList.Add(time_now.Substring(0,2) + ',' + time_now.Substring(3,2) + ',' + time_now.Substring(6,6) + ',' + message.header.seq.ToString() + ',' + latency.ToString());
+            // if(myList.Count >= 100){
+            //     StreamWriter writer = new StreamWriter(filename, false);
+            //     foreach(double number in myList){
+            //         writer.WriteLine(number);
+            //     }
+            //     Debug.Log("finish");
+            //     writer.Close();
+            //     myList.Clear();
 
-            }
+            // }
             
         }
 
@@ -112,5 +115,22 @@ namespace RosSharp.RosBridgeClient
 
             isMessageReceived = false;
         }
+        private void OnApplicationQuit()
+        {
+            StreamWriter writer = new StreamWriter(filename, false);
+            writer.WriteLine("Hr,Min,Sec,Seq,RawData");
+            foreach(string number in myList){
+                writer.WriteLine(number);
+            }
+            Debug.Log("finish");
+            Debug.Log("Application ending after " + Time.time + " seconds");
+            writer.Close();
+            myList.Clear();
+
+        }
+            
+        
+
+        
     }
 }
