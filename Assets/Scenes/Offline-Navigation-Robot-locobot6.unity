@@ -927,11 +927,12 @@ Transform:
   - {fileID: 669700579}
   - {fileID: 603292179}
   - {fileID: 699383730}
-  - {fileID: 833130454}
   - {fileID: 1877910065}
+  - {fileID: 833130454}
   - {fileID: 1195790394}
   - {fileID: 1941488559}
   - {fileID: 1259440938}
+  - {fileID: 69347221}
   - {fileID: 165112729}
   - {fileID: 971315147}
   m_Father: {fileID: 0}
@@ -967,7 +968,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.245.115.64:9090
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!1 &64486424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &69347219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,8 +1139,8 @@ Transform:
   m_LocalPosition: {x: -0.345, y: 0.76, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 62219859}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 148, y: 86, z: 0}
 --- !u!1 &70124721
 GameObject:
@@ -2983,7 +2984,7 @@ Transform:
   - {fileID: 698856798}
   - {fileID: 1113766209}
   m_Father: {fileID: 62219859}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &165112730
 MonoBehaviour:
@@ -4592,7 +4593,7 @@ Transform:
   m_Children:
   - {fileID: 971357093}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 130}
 --- !u!1 &229377108
 GameObject:
@@ -5400,7 +5401,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.245.115.64:9090
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!114 &316520872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5878,7 +5879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07822b9b518cf241b735e04664abde3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WebSocketIP: ws://10.245.115.64:9090
+  WebSocketIP: ws://10.0.0.20:9090
   controllerInput: {fileID: 1769899863}
   Topic_name_pub: /cmd_vel_mux/input/teleop
   linear_scale: 0.25
@@ -11999,7 +12000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &833130450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12030,7 +12031,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.245.115.64:9090
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!23 &833130452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12088,11 +12089,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833130449}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 1.75, y: 0.69, z: 3.24}
-  m_LocalScale: {x: 0.120000005, y: 1, z: 0.12}
+  m_LocalPosition: {x: 0.011, y: 0.75, z: 0.75}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.025}
   m_Children: []
   m_Father: {fileID: 62219859}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!114 &833130455
 MonoBehaviour:
@@ -14265,7 +14266,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.245.115.64:9090
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!114 &964843822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14429,7 +14430,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 62219859}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &971357092
 GameObject:
@@ -16914,7 +16915,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.245.115.64:9090
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!4 &1195790394
 Transform:
   m_ObjectHideFlags: 0
@@ -16923,8 +16924,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195790389}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.338, y: 0.665, z: 0.618}
-  m_LocalScale: {x: 0.05, y: 1, z: 0.05}
+  m_LocalPosition: {x: -0.375, y: 0.5, z: 0.75}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.025}
   m_Children: []
   m_Father: {fileID: 62219859}
   m_RootOrder: 7
@@ -17829,7 +17830,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f4be029f362195547b354f083fd27f17, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f4be029f362195547b354f083fd27f17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17877,7 +17878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4be029f362195547b354f083fd27f17, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4be029f362195547b354f083fd27f17, type: 3}
@@ -21809,7 +21810,7 @@ MonoBehaviour:
   desired_object:
   - {fileID: 964843819}
   - {fileID: 316520867}
-  updated_rosip: ws://10.245.115.64:9090
+  updated_rosip: ws://10.0.0.20:9090
 --- !u!1001 &1567632060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23792,7 +23793,7 @@ Transform:
   m_Children:
   - {fileID: 2083671648}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709461569
 GameObject:
@@ -25682,7 +25683,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848101764
 GameObject:
@@ -25817,6 +25818,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46398bc5d6905ad429a6d2d973afe002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1871509996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
+      propertyPath: m_Name
+      value: EE6F
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f41f658b3b9f5d3439b776ba88c5c6c8, type: 3}
 --- !u!1 &1877910060
 GameObject:
   m_ObjectHideFlags: 0
@@ -25868,7 +25926,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.245.115.64:9090
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!23 &1877910063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25926,11 +25984,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877910060}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.269, y: 0.622, z: 0.628}
-  m_LocalScale: {x: 0.05, y: 1, z: 0.05}
+  m_LocalPosition: {x: 0.4, y: 0.5, z: 0.75}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.025}
   m_Children: []
   m_Father: {fileID: 62219859}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!114 &1877910066
 MonoBehaviour:
@@ -28086,7 +28144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2005262605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28161,7 +28219,7 @@ Transform:
   m_LocalScale: {x: 0.56, y: 0.001, z: 0.41}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007184460
 GameObject:
