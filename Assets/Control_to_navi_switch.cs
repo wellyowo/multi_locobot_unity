@@ -35,23 +35,24 @@ public class Control_to_navi_switch : MonoBehaviour
         {
             button_pressed = false;
             counter +=1;
-        }
-        switch(counter %= 2)
-        {
-            case 0:
-                leftCamera.enabled = true;
-                leftpointcloud.SetActive(true);
-                midpointcloud.SetActive(true);
-                rightpointcloud.SetActive(true);
-                break;
-            case 1:
-                leftCamera.enabled = false;
-                leftpointcloud.SetActive(false);
-                midpointcloud.SetActive(false);
-                rightpointcloud.SetActive(false);
-                break;
+            switch(counter %= 2)
+            {
+                case 0:
+                    leftCamera.enabled = true;
+                    leftpointcloud.SetActive(true);
+                    midpointcloud.SetActive(true);
+                    rightpointcloud.SetActive(true);
+                    break;
+                case 1:
+                    leftCamera.enabled = false;
+                    leftpointcloud.SetActive(false);
+                    midpointcloud.SetActive(false);
+                    rightpointcloud.SetActive(false);
+                    break;
             
+            }
         }
+        
 
 
     }
