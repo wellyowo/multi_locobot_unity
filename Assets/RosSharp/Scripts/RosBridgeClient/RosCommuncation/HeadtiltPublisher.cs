@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class Float64Publisher : UnityPublisher<MessageTypes.Std.Float64>
+    public class HeadtiltPublisher : UnityPublisher<MessageTypes.Std.Float64>
     {
         private MessageTypes.Std.Float64 message;      
         public ControllersManager controllerInput; 
