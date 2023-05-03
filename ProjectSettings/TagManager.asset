@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Controller
+  - static_cam
+  - real_duck
   layers:
   - Default
   - TransparentFX
