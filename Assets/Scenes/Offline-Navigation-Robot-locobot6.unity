@@ -5930,7 +5930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: /tilt/command
-  controllerInput: {fileID: 0}
+  controllerInput: {fileID: 1769899863}
   pose:
   - 0.8
   - 0
@@ -7566,7 +7566,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: e140bee7cd4a6284c97e6c5f84cf4019, type: 2}
   m_TargetDisplay: 0
-  m_TargetEye: 3
+  m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
