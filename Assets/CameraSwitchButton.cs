@@ -36,47 +36,46 @@ public class CameraSwitchButton : MonoBehaviour
             trigger_pressed = false;
             trigger_released = true;
             counter +=1;
+            switch(counter %= 5)
+            {
+                case 0:
+                    sideCamera.SetActive(false);
+                    side_225_Camera.SetActive(false);
+                    side_450_Camera.SetActive(false);
+                    side_675_Camera.SetActive(false);
+                    mainCamera.SetActive(true);
+                    break;
+                case 1:
+                    sideCamera.SetActive(false);
+                    side_225_Camera.SetActive(true);
+                    side_450_Camera.SetActive(false);
+                    side_675_Camera.SetActive(false);
+                    mainCamera.SetActive(false);
+                    break;
+                case 2:
+                    sideCamera.SetActive(false);
+                    side_225_Camera.SetActive(false);
+                    side_450_Camera.SetActive(true);
+                    side_675_Camera.SetActive(false);
+                    mainCamera.SetActive(false);
+                    break;
+                case 3:
+                    sideCamera.SetActive(false);
+                    side_225_Camera.SetActive(false);
+                    side_450_Camera.SetActive(false);
+                    side_675_Camera.SetActive(true);
+                    mainCamera.SetActive(false);
+                    break;
+                case 4:
+                    sideCamera.SetActive(true);
+                    side_225_Camera.SetActive(false);
+                    side_450_Camera.SetActive(false);
+                    side_675_Camera.SetActive(false);
+                    mainCamera.SetActive(false);
+                    break;
+            }
         }
-        switch(counter %= 5)
-        {
-            case 0:
-                sideCamera.SetActive(false);
-                side_225_Camera.SetActive(false);
-                side_450_Camera.SetActive(false);
-                side_675_Camera.SetActive(false);
-                mainCamera.SetActive(true);
-                break;
-            case 1:
-                sideCamera.SetActive(false);
-                side_225_Camera.SetActive(true);
-                side_450_Camera.SetActive(false);
-                side_675_Camera.SetActive(false);
-                mainCamera.SetActive(false);
-                break;
-            case 2:
-                sideCamera.SetActive(false);
-                side_225_Camera.SetActive(false);
-                side_450_Camera.SetActive(true);
-                side_675_Camera.SetActive(false);
-                mainCamera.SetActive(false);
-                break;
-            case 3:
-                sideCamera.SetActive(false);
-                side_225_Camera.SetActive(false);
-                side_450_Camera.SetActive(false);
-                side_675_Camera.SetActive(true);
-                mainCamera.SetActive(false);
-                break;
-            case 4:
-                sideCamera.SetActive(true);
-                side_225_Camera.SetActive(false);
-                side_450_Camera.SetActive(false);
-                side_675_Camera.SetActive(false);
-                mainCamera.SetActive(false);
-                break;
-        }
-
-
+    
     }
 
     // void OnGUI()

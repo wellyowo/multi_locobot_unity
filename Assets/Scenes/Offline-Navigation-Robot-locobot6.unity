@@ -5859,6 +5859,9 @@ GameObject:
   m_Component:
   - component: {fileID: 385112465}
   - component: {fileID: 385112464}
+  - component: {fileID: 385112468}
+  - component: {fileID: 385112467}
+  - component: {fileID: 385112466}
   m_Layer: 0
   m_Name: Base Control
   m_TagString: Untagged
@@ -5897,6 +5900,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &385112466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385112463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c525aabec59a2479f439e6afaa4ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftCamera: {fileID: 833130452}
+  leftpointcloud: {fileID: 69347218}
+  midpointcloud: {fileID: 1941488556}
+  rightpointcloud: {fileID: 1259440937}
+  controllerInput: {fileID: 1769899863}
+--- !u!114 &385112467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385112463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd0f6736d74ec84f88f1caada44738e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /tilt/command
+  controllerInput: {fileID: 0}
+  pose:
+  - 0.8
+  - 0
+--- !u!114 &385112468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385112463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff98778ae051cfd40a6e4effdf851ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SecondsTimeout: 10
+  Serializer: 0
+  protocol: 0
+  RosBridgeServerUrl: ws://10.0.0.20:9090
 --- !u!1 &390153809
 GameObject:
   m_ObjectHideFlags: 0
