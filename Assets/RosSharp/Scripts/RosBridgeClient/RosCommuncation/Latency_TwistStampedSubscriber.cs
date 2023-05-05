@@ -28,16 +28,26 @@ namespace RosSharp.RosBridgeClient
         public Transform SubscribedTransform;
         public TMPro.TextMeshPro text_obj;
         public string filename ;
-        private float previousRealTime;
-        private Vector3 linearVelocity;
-        private Vector3 angularVelocity;
+        public ControllersManager controllerInput;
+
+
+
         private double latency, latency_count = 0;
         private uint count, i = 0;
+        private int counter = 0 ;
         private List<string> myList = new List<string>() {};
         private MessageTypes.Geometry.TwistStamped local_TwistStamped = new MessageTypes.Geometry.TwistStamped();
         private bool isMessageReceived;
         string formatString = "{0:G" + 5 + "}\t{1:G" + 5 + "}";
         private string time = "";
+
+        private float leftTriggerValue;
+        private bool trigger_pressed = false, trigger_released = true;
+        
+
+
+
+
         protected override void Start()
         {
             time = System.DateTime.Now.ToString("HH_mm_ss");
@@ -48,8 +58,7 @@ namespace RosSharp.RosBridgeClient
 
         protected override void ReceiveMessage(MessageTypes.Geometry.TwistStamped message)
         {
-            // linearVelocity = ToVector3(message.twist.linear).Ros2Unity();
-            // angularVelocity = -ToVector3(message.twist.angular).Ros2Unity();
+
             local_TwistStamped.header.Update();
             // Debug.Log("last " + message.header.stamp.secs + "." + message.header.stamp.nsecs + " now " + message_TwistStamped.header.stamp.secs + "." + message_TwistStamped.header.stamp.nsecs);
             if(message.header.stamp.secs == local_TwistStamped.header.stamp.secs)
@@ -68,22 +77,8 @@ namespace RosSharp.RosBridgeClient
             isMessageReceived = true;
             string time_now = System.DateTime.Now.ToString("HH_mm_ss.fff");
             myList.Add(time_now.Substring(0,2) + ',' + time_now.Substring(3,2) + ',' + time_now.Substring(6,6) + ',' + message.header.seq.ToString() + ',' + latency.ToString());
-            // if(myList.Count >= 100){
-            //     StreamWriter writer = new StreamWriter(filename, false);
-            //     foreach(double number in myList){
-            //         writer.WriteLine(number);
-            //     }
-            //     Debug.Log("finish");
-            //     writer.Close();
-            //     myList.Clear();
-
-            // }
             
-        }
-
-        private static Vector3 ToVector3(MessageTypes.Geometry.Vector3 geometryVector3)
-        {
-            return new Vector3((float)geometryVector3.x, (float)geometryVector3.y, (float)geometryVector3.z);
+       
         }
 
         private void Update()
@@ -102,19 +97,45 @@ namespace RosSharp.RosBridgeClient
                 count = 0;
                 latency_count = 0;
             }
-            previousRealTime = Time.realtimeSinceStartup;
+
+            leftTriggerValue = controllerInput.GetComponent<ControllersManager>().getLeftTrigger();
+            if(leftTriggerValue > 0.7f && trigger_released == true)
+            {
+                trigger_pressed = true;
+                trigger_released = false;
+            }
+            if(leftTriggerValue < 0.7f && trigger_pressed == true)
+            {
+                trigger_pressed = false;
+                trigger_released = true;
+                counter +=1;
+            }
+            if(counter == 1)
+            {
+                StreamWriter writer = new StreamWriter(filename, false);
+                writer.WriteLine("Hr,Min,Sec,Seq,RawData");
+                foreach(string number in myList){
+                    writer.WriteLine(number);
+                }
+                Debug.Log("finish");
+                Debug.Log("Application ending after " + Time.time + " seconds");
+                writer.Close();
+                myList.Clear();
+
+
+            }
         }
+
+
         private void ProcessMessage()
         {
-            // float deltaTime = Time.realtimeSinceStartup - previousRealTime;
-
-            // SubscribedTransform.Translate(linearVelocity * deltaTime);
-            // SubscribedTransform.Rotate(Vector3.forward, angularVelocity.x * deltaTime);
-            // SubscribedTransform.Rotate(Vector3.up, angularVelocity.y * deltaTime);
-            // SubscribedTransform.Rotate(Vector3.left, angularVelocity.z * deltaTime);
-
             isMessageReceived = false;
         }
+
+
+
+
+        //only works in unity editor
         private void OnApplicationQuit()
         {
             StreamWriter writer = new StreamWriter(filename, false);
