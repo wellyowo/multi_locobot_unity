@@ -34,13 +34,11 @@ public class RGBDRender : MonoBehaviour
     {
         // Give all the required components to the gameObject
         meshRenderer = gameObject.AddComponent<MeshRenderer>();
+        mesh = new Mesh();
         mf = gameObject.AddComponent<MeshFilter>();
         meshRenderer.material = new Material(Shader.Find("Unlit/PointCloudCutout"));
-        mesh = new Mesh
-        {
             // Use 32 bit integer values for the mesh, allows for stupid amount of vertices (2,147,483,647 I think?)
-            indexFormat = UnityEngine.Rendering.IndexFormat.UInt32
-        };
+        mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
 
         transform.position = offset.position;
         transform.rotation = offset.rotation;
@@ -50,14 +48,15 @@ public class RGBDRender : MonoBehaviour
     {
         m_UVRs.Clear();
         m_Triangles.Clear();
+        mesh.Clear();
         //positions = subscriber.pcl;
         positions = subscriber.GetPCL(3);
         colours = subscriber.GetPCLColor(3);
-        if (positions == null)
+        if (positions == null || colours == null)
         {
             return;
         }
-        mesh.Clear();
+        
         mesh.vertices = positions;
         mesh.colors = colours;
 
