@@ -6,7 +6,7 @@ using Photon.Pun;
 public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
 {
     public bool robot_real_state = true;
-    public string Name_RobotAvatar = "Real locobot";
+    public string Name_RobotAvatar = "Real_locobot";
 
     public bool robot_camera_top = true;
     public string Name_RobotCameraTop = "PunRPC_Camera_view";
@@ -33,7 +33,7 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
         if (!firstPlayer)
         {
 
-            spawnPlayerprefab = PhotonNetwork.Instantiate("Fake locobot", transform.position, transform.rotation);
+            spawnPlayerprefab = PhotonNetwork.Instantiate("Human_locobot", transform.position, transform.rotation);
         }
         else
         {
