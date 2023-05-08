@@ -38,9 +38,9 @@ public class right_grip_function : MonoBehaviour
     {
         if (rightgripValue > 0.7f)
         {
-            newLine.enabled = true;
-            newLine.positionCount = numClicks + 1;
-            newLine.SetPosition(numClicks, rightControllerSource.position);
+            //newLine.enabled = true;
+            //newLine.positionCount = numClicks + 1;
+            //newLine.SetPosition(numClicks, rightControllerSource.position);
             numClicks ++ ;
 
             ConnectorOutput.GetComponent<JointStatePublisher>().enabled = true;
@@ -48,19 +48,19 @@ public class right_grip_function : MonoBehaviour
         else
         {   
             if (rightgripValue > 0.1f) { 
-                GameObject draw = new GameObject();
-                newLine = draw.AddComponent<LineRenderer>();
-                newLine.startWidth = startWidth;
-                newLine.material = lineMaterial;
-                newLine.enabled = false;
+                //GameObject draw = new GameObject();
+                //newLine = draw.AddComponent<LineRenderer>();
+                //newLine.startWidth = startWidth;
+                //newLine.material = lineMaterial;
+                //newLine.enabled = false;
 
-                lines.Add(newLine.gameObject);
+                //lines.Add(newLine.gameObject);
                 numClicks = 0;
             }
-            else if (rightgripValue <0.1f)
-            {
-                delLine();
-            }
+            //else if (rightgripValue <0.1f)
+            //{
+                //delLine();
+            //}
             ConnectorOutput.GetComponent<JointStatePublisher>().enabled = false;
         }
     }
