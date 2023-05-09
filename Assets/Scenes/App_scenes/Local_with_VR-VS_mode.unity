@@ -26641,7 +26641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {x: 1, y: 0, z: 0}
   defaultLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  useLimits: 1
+  useLimits: 0
   min: -45
   max: 90
   zeroAxisDisplayOffset: 0

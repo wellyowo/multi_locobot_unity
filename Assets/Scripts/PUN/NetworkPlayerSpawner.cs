@@ -6,7 +6,7 @@ using Photon.Pun;
 public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
 {
     public bool robot_real_state = true;
-    public string Name_RobotAvatar = "Real locobot";
+    public string Name_RobotAvatar = "PunRPC_Real_locobot";
 
     public bool robot_camera_top = true;
     public string Name_RobotCameraTop = "PunRPC_Camera_view";
