@@ -1,7 +1,6 @@
 ﻿/*
 © Siemens AG, 2017-2018
 Author: Dr. Martin Bischoff (martin.bischoff@siemens.com)
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -12,43 +11,44 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
 using UnityEngine;
 using Photon.Pun;
-
 namespace RosSharp.RosBridgeClient
 {
     [RequireComponent(typeof(RosConnector))]
     public class PunRPC_ImageSubscriber : UnitySubscriber<MessageTypes.Sensor.CompressedImage>
     {
         public MeshRenderer meshRenderer;
-
         private Texture2D texture2D;
         private PhotonView photonView;
-
         private byte[] imageData;
         private bool isMessageReceived;
-
+        private float timeWait;
         protected override void Start()
         {
             base.Start();
             texture2D = new Texture2D(1, 1);
+            photonView = GetComponent<PhotonView>();
             meshRenderer.material = new Material(Shader.Find("Standard"));
         }
         private void Update()
         {
+            timeWait += Time.deltaTime;
             if (isMessageReceived)
+            {
                 ProcessMessage();
-                photonView.RPC("getImage", RpcTarget.All, imageData);
-
+                if (timeWait > 1.5f && GetComponent<ImageSyn>() != null)
+                {
+                    photonView.RPC("getImage", RpcTarget.All, imageData);
+                    timeWait = 0f;
+                }
+            }
         }
-
         protected override void ReceiveMessage(MessageTypes.Sensor.CompressedImage compressedImage)
         {
             imageData = compressedImage.data;
             isMessageReceived = true;
         }
-
         private void ProcessMessage()
         {
             texture2D.LoadImage(imageData);
@@ -56,7 +56,5 @@ namespace RosSharp.RosBridgeClient
             meshRenderer.material.SetTexture("_MainTex", texture2D);
             isMessageReceived = false;
         }
-
     }
-}
-
+} 

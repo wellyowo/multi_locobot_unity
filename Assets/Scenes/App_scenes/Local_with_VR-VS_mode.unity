@@ -680,6 +680,7 @@ GameObject:
   - component: {fileID: 76728632}
   - component: {fileID: 76728639}
   - component: {fileID: 76728638}
+  - component: {fileID: 76728640}
   m_Layer: 0
   m_Name: forearm_link
   m_TagString: Untagged
@@ -815,9 +816,9 @@ MonoBehaviour:
   DisplayInertiaGizmo: 0
   rigidbodyDataSource: 1
   Mass: 0.18746427
-  CenterOfMass: {x: -3.0931098e-15, y: -0.000000012621888, z: 0.11782983}
-  InertiaTensor: {x: 0.000039414237, y: 0.0007252104, z: 0.000737165}
-  InertiaTensorRotation: {x: -0.5, y: 0.5, z: 0.50000006, w: 0.5}
+  CenterOfMass: {x: 0, y: 0, z: 0}
+  InertiaTensor: {x: 1, y: 1, z: 1}
+  InertiaTensorRotation: {x: 0, y: 0, z: 0, w: 1}
   UrdfMass: 0.18746427
   UrdfCenterOfMass: {x: -3.0931098e-15, y: -0.000000012621888, z: 0.11782983}
   UrdfInertiaTensor: {x: 0.000039414237, y: 0.0007252104, z: 0.000737165}
@@ -859,6 +860,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &76728640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76728629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484718f2c4ab849829491782b508958a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 1, y: 0, z: 0}
+  defaultLocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  useLimits: 0
+  min: -90
+  max: 90
+  zeroAxisDisplayOffset: 0
 --- !u!1001 &78984817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1822,9 +1841,9 @@ MonoBehaviour:
   DisplayInertiaGizmo: 0
   rigidbodyDataSource: 1
   Mass: 0.0795745
-  CenterOfMass: {x: 0.0000125977285, y: 0.0092307, z: 0.03115728}
-  InertiaTensor: {x: 0.00003187873, y: 0.000044718417, z: 0.000051076746}
-  InertiaTensorRotation: {x: -0.4431336, y: 0.44458285, z: 0.551221, w: 0.5496673}
+  CenterOfMass: {x: 0, y: 0, z: 0}
+  InertiaTensor: {x: 1, y: 1, z: 1}
+  InertiaTensorRotation: {x: 0, y: 0, z: 0, w: 1}
   UrdfMass: 0.0795745
   UrdfCenterOfMass: {x: 0.0000125977285, y: 0.0092307, z: 0.03115728}
   UrdfInertiaTensor: {x: 0.00003187873, y: 0.000044718417, z: 0.000051076746}
@@ -18631,6 +18650,7 @@ MonoBehaviour:
   rightControllerSource: {fileID: 1531602643}
   controllerInput: {fileID: 1769899861}
   ConnectorOutput: {fileID: 0}
+  PUN_flag: 0
   lineMaterial: {fileID: 2100000, guid: cc5368b74c17db147b59656dee993f09, type: 2}
   startWidth: 0.05
   endWidth: 0.05
@@ -18648,7 +18668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 0}
+  PUN_flag: 0
   Topic_name_pub_primary_button: /vr/right/primarybutton
   Topic_name_pub_secondary_button: /vr/right/secondarybutton
 --- !u!114 &1531602651
@@ -18664,7 +18685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 0}
+  PUN_flag: 0
   Topic_name_pub: /cmd/input/teleop
   linear_scale: 0.25
   angular_scale: 2
@@ -26425,6 +26447,7 @@ GameObject:
   - component: {fileID: 2113485676}
   - component: {fileID: 2113485683}
   - component: {fileID: 2113485682}
+  - component: {fileID: 2113485684}
   m_Layer: 0
   m_Name: wrist_link
   m_TagString: Untagged
@@ -26559,10 +26582,10 @@ MonoBehaviour:
   _rigidbody: {fileID: 2113485675}
   DisplayInertiaGizmo: 0
   rigidbodyDataSource: 1
-  Mass: 0.060592175
-  CenterOfMass: {x: -0.000049864473, y: 0.011426695, z: 0.042941004}
-  InertiaTensor: {x: 0.000017307795, y: 0.000020894317, z: 0.000020978949}
-  InertiaTensorRotation: {x: 0.645479, y: -0.605272, z: -0.36450604, w: -0.2900656}
+  Mass: 0.06059217
+  CenterOfMass: {x: 0, y: 0, z: 0}
+  InertiaTensor: {x: 1, y: 1, z: 1}
+  InertiaTensorRotation: {x: 0, y: 0, z: 0, w: 1}
   UrdfMass: 0.060592175
   UrdfCenterOfMass: {x: -0.000049864473, y: 0.011426695, z: 0.042941004}
   UrdfInertiaTensor: {x: 0.000017307795, y: 0.000020894317, z: 0.000020978949}
@@ -26604,6 +26627,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2113485684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113485673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484718f2c4ab849829491782b508958a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 1, y: 0, z: 0}
+  defaultLocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  useLimits: 1
+  min: -45
+  max: 90
+  zeroAxisDisplayOffset: 0
 --- !u!1 &2114704796
 GameObject:
   m_ObjectHideFlags: 8

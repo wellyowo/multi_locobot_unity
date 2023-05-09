@@ -1861,14 +1861,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565779966}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3aac27bbb01868b4da194063e270363c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   desired_object:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1824069336}
   updated_rosip: ws://10.42.0.2:9090
 --- !u!1 &1655382341
 GameObject:
@@ -2242,7 +2241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae1d8da5a3c0644bb98a540ca597dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /joint_state_test
+  Topic: /joint_states_test
   JointStateReaders:
   - {fileID: 0}
   - {fileID: 0}
