@@ -17,8 +17,8 @@ public class update_dope_state : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         XRRig rig = FindObjectOfType<XRRig>();
-        rightConPos = rig.transform.Find("Camera Offset/RightHand Controller");
-        controllers = GameObject.FindWithTag("Controllers");
+        rightConPos = GameObject.FindWithTag("Right_hand").transform;
+        controllers = GameObject.FindWithTag("Controller");
 
     }
 

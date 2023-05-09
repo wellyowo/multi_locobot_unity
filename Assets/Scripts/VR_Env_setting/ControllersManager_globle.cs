@@ -37,36 +37,36 @@ public class ControllersManager_globle : MonoBehaviour
     //-------RIGHT CONTROLLER------------//
     public float getRightGrip()
     {
-        rightController.TryGetFeatureValue(CommonUsages.grip, out float gripRightValue);
+        //rightController.TryGetFeatureValue(CommonUsages.grip, out float gripRightValue);
         return gripRightValue;
     }
 
     public float getRightTrigger()
     {
-        rightController.TryGetFeatureValue(CommonUsages.trigger, out float triggerRightValue);
+        //rightController.TryGetFeatureValue(CommonUsages.trigger, out float triggerRightValue);
         return triggerRightValue;
     }
 
     public bool getRightPrimaryButton()
     {
-        rightController.TryGetFeatureValue(CommonUsages.primaryButton, out bool RightprimaryButtonValue);
+        //rightController.TryGetFeatureValue(CommonUsages.primaryButton, out bool RightprimaryButtonValue);
         return RightprimaryButtonValue;
     }
 
     public bool getRightSecondaryButton()
     {
-        rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool RightsecondaryButtonValue);
+        //rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool RightsecondaryButtonValue);
         return RightsecondaryButtonValue;
     }
 
     public void sendRightHaptic(float amplitude, float duration)
     {
-        rightController.SendHapticImpulse(0, amplitude, duration);
+        //rightController.SendHapticImpulse(0, amplitude, duration);
     }
 
     public Vector2 getRightPrimary2DAxis()
     {
-        rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 Rightprimary2DAxisValue);
+        //rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 Rightprimary2DAxisValue);
         return Rightprimary2DAxisValue;
     }
 
@@ -106,36 +106,36 @@ public class ControllersManager_globle : MonoBehaviour
     //-------LEFT CONTROLLER------------//
     public float getLeftGrip()
     {
-        leftController.TryGetFeatureValue(CommonUsages.grip, out float gripLeftValue);
+        //leftController.TryGetFeatureValue(CommonUsages.grip, out float gripLeftValue);
         return gripLeftValue;
     }
 
     public float getLeftTrigger()
     {
-        leftController.TryGetFeatureValue(CommonUsages.trigger, out float triggerLeftValue);
+        //leftController.TryGetFeatureValue(CommonUsages.trigger, out float triggerLeftValue);
         return triggerLeftValue;
     }
 
     public bool getLeftPrimaryButton()
     {
-        leftController.TryGetFeatureValue(CommonUsages.primaryButton, out bool LeftprimaryButtonValue);
+        //leftController.TryGetFeatureValue(CommonUsages.primaryButton, out bool LeftprimaryButtonValue);
         return LeftprimaryButtonValue;
     }
 
     public bool getLeftSecondaryButton()
     {
-        leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool LeftsecondaryButtonValue);
+        //leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool LeftsecondaryButtonValue);
         return LeftsecondaryButtonValue;
     }
 
     public void sendLeftHaptic(float amplitude, float duration)
     {
-        leftController.SendHapticImpulse(0, amplitude, duration);
+        //leftController.SendHapticImpulse(0, amplitude, duration);
     }
 
     public Vector2 getLeftPrimary2DAxis()
     {
-        leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 Leftprimary2DAxisValue);
+        //leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 Leftprimary2DAxisValue);
         return Leftprimary2DAxisValue;
     }
 

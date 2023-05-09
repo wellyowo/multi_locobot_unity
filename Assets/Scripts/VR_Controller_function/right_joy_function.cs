@@ -8,7 +8,8 @@ public class right_joy_function : MonoBehaviour
 {
     RosSocket rosSocket;
     public GameObject updateIP;
-    public ControllersManager controllerInput;
+    public GameObject controllerInput;
+    public bool PUN_flag = false;
 
     public string Topic_name_pub; //topic name
     private string RosBridgeServerUrl; //IP address
@@ -34,7 +35,15 @@ public class right_joy_function : MonoBehaviour
 
     void Update()
     {
-        Primary2DAxis = controllerInput.GetComponent<ControllersManager>().getRightPrimary2DAxis();
+        if (PUN_flag)
+        {
+            Primary2DAxis = controllerInput.GetComponent<ControllersManager_globle>().getRightPrimary2DAxis();
+        }
+        else
+        {
+            Primary2DAxis = controllerInput.GetComponent<ControllersManager>().getRightPrimary2DAxis();
+        }
+        
 
         linear_speed = Primary2DAxis.y;
         linear_speed = linear_speed * linear_scale;
