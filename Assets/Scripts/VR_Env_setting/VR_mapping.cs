@@ -14,11 +14,16 @@ public class VR_mapping : MonoBehaviour
 
     void Start()
     {
-        vr_controller = sourceVRController.transform;
+        // sourceVRController = GameObject.FindGameObjectsWithTag("Controller")[0];
+        sourceVRController=GameObject.FindWithTag("right_hand");
+        // vr_controller = sourceVRController.transform;
     }
 
     void Update()
     {
+        vr_controller = sourceVRController.transform;
+        Debug.Log(vr_controller.position.x);
+
         zVRr = vr_controller.eulerAngles.z;
         xVRr = vr_controller.eulerAngles.x;
 
