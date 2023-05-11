@@ -5,8 +5,9 @@ Unity version : 2020.3.36
 
 # Usage for User
 1. Create a Unity Project
-2. Install necessary package
-    - XR interaction Toolkit (version : 2.0.2)
+2. Install XR Plugin Management (Edit > Project Settings > XR Plugin Management)
+3. Install necessary package (Window > Package Manager)
+    - XR interaction Toolkit
         - [import package and import simple asserts]
     - RosSharp 
         - [import package]
@@ -15,9 +16,9 @@ Unity version : 2020.3.36
     - Animation Rigging
         - [import package and import samples]
     - Final-ik 
-        - [copy from previous project/import]
+        - [import package]
 
-3. Download WFH-VR unity package ([NAS](http://gofile.me/773h8/NVebXKNBM) / [Google](https://drive.google.com/file/d/19_XCFKJVD82h7L7n1Ll08grHCy1sGtBl/view?usp=share_link))
+3. Download WFH-VR unity package ([NAS](http://gofile.me/773h8/zHi3HBaIg) / [Google](https://drive.google.com/file/d/1zYyjM1wNBreA6V1rU0g2f7u0YH_H9w-V/view?usp=share_link))
 4. Import WFH-VR unity package
 5. Follow the instruction in this ([tutorial](https://github.com/ARG-NCTU/WFH_locobot)) step4
 
