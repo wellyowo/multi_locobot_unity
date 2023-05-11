@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class VR_mapping : MonoBehaviour
 {
-    public GameObject sourceVRController;
+    
     public GameObject targetEndEffector;
     private Transform vr_controller;
 
     public GameObject targetPitch;
     public GameObject targetRoll;
     private float xVRr, zVRr;
-
+    
+    private GameObject sourceVRController;
     void Start()
     {
         // sourceVRController = GameObject.FindGameObjectsWithTag("Controller")[0];
@@ -22,7 +23,7 @@ public class VR_mapping : MonoBehaviour
     void Update()
     {
         vr_controller = sourceVRController.transform;
-        Debug.Log(vr_controller.position.x);
+        //Debug.Log(vr_controller.position.x);
 
         zVRr = vr_controller.eulerAngles.z;
         xVRr = vr_controller.eulerAngles.x;
