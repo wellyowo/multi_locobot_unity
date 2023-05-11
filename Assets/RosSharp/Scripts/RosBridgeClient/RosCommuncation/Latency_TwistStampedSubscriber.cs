@@ -51,7 +51,8 @@ namespace RosSharp.RosBridgeClient
         protected override void Start()
         {
             time = System.DateTime.Now.ToString("HH_mm_ss");
-            filename = Application.dataPath + "/Latency/" + filename+"_"+ time+ ".csv";
+            // filename = Application.dataPath + "/Latency/" + filename+"_"+ time+ ".csv";
+            filename = System.IO.Directory.GetCurrentDirectory() + filename+"_"+ time+ ".csv";
             base.Start();
 
         }
@@ -101,17 +102,20 @@ namespace RosSharp.RosBridgeClient
             leftTriggerValue = controllerInput.GetComponent<ControllersManager>().getLeftTrigger();
             if(leftTriggerValue > 0.7f && trigger_released == true)
             {
+                //Debug.Log("Trigger pressed");
                 trigger_pressed = true;
                 trigger_released = false;
             }
             if(leftTriggerValue < 0.7f && trigger_pressed == true)
             {
+                //Debug.Log("Trigger released");
                 trigger_pressed = false;
                 trigger_released = true;
                 counter +=1;
             }
             if(counter == 1)
             {
+                counter  = 2;
                 StreamWriter writer = new StreamWriter(filename, false);
                 writer.WriteLine("Hr,Min,Sec,Seq,RawData");
                 foreach(string number in myList){
