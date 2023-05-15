@@ -18,9 +18,13 @@ Unity version : 2020.3.36
     - Final-ik 
         - [import package]
 
-3. Download WFH-VR unity package ([NAS](http://gofile.me/773h8/kThyCZAnT) / [Google](https://drive.google.com/file/d/1kUqzl6MHJ0tGYoxbS-eJ2QDyrAE55CXv/view?usp=share_link))
+3. Download WFH-VR unity package ([NAS](http://gofile.me/773h8/kThyCZAnT) / [Google](https://drive.google.com/file/d/1Tjsa4uXCVptfh9f5Rs-yoT5yRGvPecAO/view?usp=sharing))
 4. Import WFH-VR unity package
 5. Follow the instruction in this ([tutorial](https://github.com/ARG-NCTU/WFH_locobot)) step4
+
+## Demo video for how to use our unity package
+[NAS-Video](http://gofile.me/773h8/Zd5cNhRT2) / [Google-Video](https://drive.google.com/file/d/16zfilRbawbxhfJEDlKrbYuhEhZIjG4LB/view?usp=share_link)
+
 
 # Usage for developer
 1. Clone this repo
