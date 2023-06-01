@@ -5825,7 +5825,6 @@ MonoBehaviour:
   leftpointcloud: {fileID: 69347218}
   midpointcloud: {fileID: 1941488556}
   rightpointcloud: {fileID: 1259440937}
-  table: {fileID: 2005262604}
   controllerInput: {fileID: 1769899863}
 --- !u!114 &385112467
 MonoBehaviour:
@@ -21361,6 +21360,7 @@ MonoBehaviour:
   rightControllerSource: {fileID: 1531602643}
   controllerInput: {fileID: 1769899861}
   ConnectorOutput: {fileID: 316520867}
+  PUN_flag: 0
   lineMaterial: {fileID: 2100000, guid: cc5368b74c17db147b59656dee993f09, type: 2}
   startWidth: 0.025
   endWidth: 0.025
@@ -21378,7 +21378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 1769899861}
+  PUN_flag: 0
   Topic_name_pub_primary_button: /vr/right/primarybutton
   Topic_name_pub_secondary_button: /vr/right/secondarybutton
 --- !u!114 &1531602651
@@ -21394,7 +21395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 1769899861}
+  PUN_flag: 0
   Topic_name_pub: /cmd/input/teleop
   linear_scale: 0.25
   angular_scale: 2
@@ -23636,6 +23638,10 @@ MonoBehaviour:
   updateIP: {fileID: 1565779966}
   obj1: {fileID: 682256246}
   obj2: {fileID: 550158821}
+  obj3: {fileID: 0}
+  obj1_name: /dope/pose_Butter
+  obj2_name: /dope/pose_Spaghetti
+  obj3_name: /dope/pose_sugar
   locobot_arm: {fileID: 1515090454}
   locobot_camera: {fileID: 1777672171}
   locobot_camera_side: {fileID: 634647918}
@@ -24340,7 +24346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac60da3a459018347b5a457e9bcce185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceVRController: {fileID: 1531602642}
   targetEndEffector: {fileID: 1634140716}
   targetPitch: {fileID: 1356977217}
   targetRoll: {fileID: 1903330171}

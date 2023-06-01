@@ -1007,7 +1007,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1015,8 +1015,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: e140bee7cd4a6284c97e6c5f84cf4019, type: 2}
-  m_TargetDisplay: 0
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -3453,7 +3453,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -3461,8 +3461,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: e140bee7cd4a6284c97e6c5f84cf4019, type: 2}
-  m_TargetDisplay: 0
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -6992,11 +6992,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a68f25729791943ba2720e5edd51b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /subscribe_topic
+  Topic: /publish_topic
   TimeStep: 0
   SubscribedTransform: {fileID: 0}
   text_obj: {fileID: 669700577}
   filename: EE622_WiFi6_control_latency
+  controllerInput: {fileID: 0}
 --- !u!114 &454487378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7506,7 +7507,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -7514,8 +7515,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: e140bee7cd4a6284c97e6c5f84cf4019, type: 2}
-  m_TargetDisplay: 0
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -10636,7 +10637,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -10644,8 +10645,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: e140bee7cd4a6284c97e6c5f84cf4019, type: 2}
-  m_TargetDisplay: 0
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -15505,7 +15506,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -15513,8 +15514,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: e140bee7cd4a6284c97e6c5f84cf4019, type: 2}
-  m_TargetDisplay: 0
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -21442,6 +21443,7 @@ MonoBehaviour:
   rightControllerSource: {fileID: 1531602643}
   controllerInput: {fileID: 1769899861}
   ConnectorOutput: {fileID: 316520867}
+  PUN_flag: 0
   lineMaterial: {fileID: 2100000, guid: cc5368b74c17db147b59656dee993f09, type: 2}
   startWidth: 0.025
   endWidth: 0.025
@@ -21459,7 +21461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 0}
+  PUN_flag: 0
   Topic_name_pub_primary_button: /vr/right/primarybutton
   Topic_name_pub_secondary_button: /vr/right/secondarybutton
 --- !u!114 &1531602651
@@ -21475,7 +21478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 0}
+  PUN_flag: 0
   Topic_name_pub: /cmd/input/teleop
   linear_scale: 0.25
   angular_scale: 2
@@ -23716,6 +23720,10 @@ MonoBehaviour:
   updateIP: {fileID: 1565779966}
   obj1: {fileID: 682256246}
   obj2: {fileID: 550158821}
+  obj3: {fileID: 0}
+  obj1_name: /dope/pose_Butter
+  obj2_name: /dope/pose_Spaghetti
+  obj3_name: /dope/pose_sugar
   locobot_arm: {fileID: 1515090454}
   locobot_camera: {fileID: 1777672171}
   locobot_camera_side: {fileID: 634647918}
@@ -24420,7 +24428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac60da3a459018347b5a457e9bcce185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceVRController: {fileID: 1531602642}
   targetEndEffector: {fileID: 1634140716}
   targetPitch: {fileID: 1356977217}
   targetRoll: {fileID: 1903330171}
@@ -28728,6 +28735,49 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &2041115699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041115701}
+  - component: {fileID: 2041115700}
+  m_Layer: 0
+  m_Name: multiple_display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2041115700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041115699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c947c3fb26f904abefcf0b37e9f3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2041115701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041115699}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.46676004, y: -0.76677954, z: 1.8919029}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2051763289
 PrefabInstance:
   m_ObjectHideFlags: 0
