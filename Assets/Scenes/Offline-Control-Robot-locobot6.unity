@@ -2938,7 +2938,7 @@ Transform:
   - {fileID: 698856798}
   - {fileID: 1113766209}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &165112730
 MonoBehaviour:
@@ -4411,6 +4411,110 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec95d463d3b5794e8e0107fc6647fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &216453205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2045417069}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_Name
+      value: textured_simple
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+--- !u!4 &216453206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+  m_PrefabInstance: {fileID: 216453205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &216453207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bafffbb4b57c744390e45e4ecca9704, type: 3}
+  m_PrefabInstance: {fileID: 216453205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &216453208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216453207}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.2, y: 5.2, z: 2.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &222208232
 GameObject:
   m_ObjectHideFlags: 8
@@ -4510,7 +4614,7 @@ GameObject:
   - component: {fileID: 227760058}
   - component: {fileID: 227760057}
   m_Layer: 0
-  m_Name: Perception
+  m_Name: Perception_sugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4528,9 +4632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7238399113598a4f9de55cb8d8b566d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateIP: ws://10.0.0.20:9090
+  updateIP: ws://192.168.50.13:9090
   obj1: {fileID: 971357092}
-  topic_name: /dope/pose_sugar
+  topic_name: /dope/pose_sugar_baselink
   offset_x: 0
   offset_y: 0
   offset_z: 0
@@ -4541,14 +4645,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227760056}
-  m_LocalRotation: {x: 0.63213015, y: 0.22133665, z: -0.7146022, w: 0.20190449}
-  m_LocalPosition: {x: -0.451324, y: 0.73, z: 0.45}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 971357093}
   m_Father: {fileID: 0}
   m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 145.13847, y: 97.2002, z: 0.61}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229377108
 GameObject:
   m_ObjectHideFlags: 0
@@ -5355,7 +5459,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.0.0.20:9090
+  RosBridgeServerUrl: ws://192.168.50.13:9090
 --- !u!114 &316520872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7035,16 +7139,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454487375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43a68f25729791943ba2720e5edd51b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /subscribe_topic
+  Topic: /publish_topic
   TimeStep: 0
   SubscribedTransform: {fileID: 0}
   text_obj: {fileID: 669700577}
   filename: locobot6_control_latency
+  controllerInput: {fileID: 1769899863}
 --- !u!114 &454487378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7060,7 +7165,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.0.0.20:9090
+  RosBridgeServerUrl: ws://192.168.50.13:9090
 --- !u!114 &454487379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7068,12 +7173,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454487375}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0911cb3e8dd703409f7b3dcc17cc1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /subscribe_topic
+  Topic: /publish_topic
   TimeStep: 0
   SubscribedTransform: {fileID: 0}
   text_obj: {fileID: 669700577}
@@ -12082,7 +12187,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.0.0.20:9090
+  RosBridgeServerUrl: ws://192.168.50.13:9090
 --- !u!23 &833130452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14317,7 +14422,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.0.0.20:9090
+  RosBridgeServerUrl: ws://192.168.50.13:9090
 --- !u!114 &964843822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14481,7 +14586,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &971357092
 GameObject:
@@ -16966,7 +17071,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.0.0.20:9090
+  RosBridgeServerUrl: ws://192.168.50.13:9090
 --- !u!4 &1195790394
 Transform:
   m_ObjectHideFlags: 0
@@ -21490,6 +21595,7 @@ MonoBehaviour:
   rightControllerSource: {fileID: 1531602643}
   controllerInput: {fileID: 1769899861}
   ConnectorOutput: {fileID: 316520867}
+  PUN_flag: 0
   lineMaterial: {fileID: 2100000, guid: cc5368b74c17db147b59656dee993f09, type: 2}
   startWidth: 0.025
   endWidth: 0.025
@@ -21507,7 +21613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 0}
+  PUN_flag: 0
   Topic_name_pub_primary_button: /vr/right/primarybutton
   Topic_name_pub_secondary_button: /vr/right/secondarybutton
 --- !u!114 &1531602651
@@ -21523,7 +21630,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateIP: {fileID: 1565779966}
-  controllerInput: {fileID: 1769899863}
+  controllerInput: {fileID: 0}
+  PUN_flag: 0
   Topic_name_pub: /cmd/input/teleop
   linear_scale: 0.25
   angular_scale: 2
@@ -21800,7 +21908,7 @@ MonoBehaviour:
   desired_object:
   - {fileID: 964843819}
   - {fileID: 316520867}
-  updated_rosip: ws://10.0.0.20:9090
+  updated_rosip: ws://192.168.50.13:9090
 --- !u!1001 &1567632060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23764,6 +23872,10 @@ MonoBehaviour:
   updateIP: {fileID: 1565779966}
   obj1: {fileID: 682256246}
   obj2: {fileID: 550158821}
+  obj3: {fileID: 0}
+  obj1_name: /dope/pose_Butter
+  obj2_name: /dope/pose_Spaghetti
+  obj3_name: /dope/pose_sugar
   locobot_arm: {fileID: 1515090454}
   locobot_camera: {fileID: 1777672171}
   locobot_camera_side: {fileID: 634647918}
@@ -23783,7 +23895,7 @@ Transform:
   m_Children:
   - {fileID: 2083671648}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709461569
 GameObject:
@@ -24468,7 +24580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac60da3a459018347b5a457e9bcce185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceVRController: {fileID: 1531602642}
   targetEndEffector: {fileID: 1634140716}
   targetPitch: {fileID: 1356977217}
   targetRoll: {fileID: 1903330171}
@@ -25673,7 +25784,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848101764
 GameObject:
@@ -25859,7 +25970,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://10.0.0.20:9090
+  RosBridgeServerUrl: ws://192.168.50.13:9090
 --- !u!23 &1877910063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28776,6 +28887,37 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &2045417068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2045417069}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2045417069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045417068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 216453206}
+  m_Father: {fileID: 2053208990}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2051763289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28838,6 +28980,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2ce610aae9917a547bd211d0e5855b0c, type: 3}
   m_PrefabInstance: {fileID: 2051763289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2053208988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053208990}
+  - component: {fileID: 2053208989}
+  m_Layer: 0
+  m_Name: Perception_butter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2053208989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053208988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7238399113598a4f9de55cb8d8b566d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateIP: ws://192.168.50.13:9090
+  obj1: {fileID: 2045417068}
+  topic_name: /dope/pose_Butter_baselink
+  offset_x: 0
+  offset_y: 0
+  offset_z: 0
+--- !u!4 &2053208990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053208988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2045417069}
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2057028716
 GameObject:
   m_ObjectHideFlags: 0
