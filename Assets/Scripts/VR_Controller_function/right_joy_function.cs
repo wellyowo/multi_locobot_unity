@@ -58,4 +58,11 @@ public class right_joy_function : MonoBehaviour
         rosSocket.Publish(twist_target, message_twist);
     }
 
+
+    private void OnApplicationQuit()
+        {
+            rosSocket.Unadvertise(twist_target);
+            rosSocket.Close();
+        }
+
 }

@@ -18,7 +18,7 @@ public class right_grip_function : MonoBehaviour
 
     private List<GameObject> lines = new List<GameObject>(); //lists of lines
     private LineRenderer newLine;
-    private int numClicks = 0;
+    //private int numClicks = 0;
 
     private float rightgripValue;
 
@@ -46,42 +46,42 @@ public class right_grip_function : MonoBehaviour
     {
         if (rightgripValue > 0.7f)
         {
-            newLine.enabled = true;
-            newLine.positionCount = numClicks + 1;
-            newLine.SetPosition(numClicks, rightControllerSource.position);
-            numClicks ++ ;
+            // newLine.enabled = true;
+            // newLine.positionCount = numClicks + 1;
+            // newLine.SetPosition(numClicks, rightControllerSource.position);
+            // numClicks ++ ;
 
             ConnectorOutput.GetComponent<JointStatePublisher>().enabled = true;
         }
         else
         {   
-            if (rightgripValue > 0.1f) { 
-                GameObject draw = new GameObject();
-                newLine = draw.AddComponent<LineRenderer>();
-                newLine.startWidth = startWidth;
-                newLine.material = lineMaterial;
-                newLine.enabled = false;
+            // if (rightgripValue > 0.1f) { 
+            //     GameObject draw = new GameObject();
+            //     newLine = draw.AddComponent<LineRenderer>();
+            //     newLine.startWidth = startWidth;
+            //     newLine.material = lineMaterial;
+            //     newLine.enabled = false;
 
-                lines.Add(newLine.gameObject);
-                numClicks = 0;
-            }
-            else if (rightgripValue <0.1f)
-            {
-                delLine();
-            }
+            //     lines.Add(newLine.gameObject);
+            //     numClicks = 0;
+            // }
+            // else if (rightgripValue <0.1f)
+            // {
+            //     delLine();
+            // }
             ConnectorOutput.GetComponent<JointStatePublisher>().enabled = false;
         }
     }
 
-    private void delLine()
-    {
-        for(int i = 0; i < lines.Count; i++)
-        {
-            if (lines[i] != null)
-            {
-                Destroy(lines[i]);
-            }
-        }
-        lines = new List<GameObject>();
-    }
+    // private void delLine()
+    // {
+    //     for(int i = 0; i < lines.Count; i++)
+    //     {
+    //         if (lines[i] != null)
+    //         {
+    //             Destroy(lines[i]);
+    //         }
+    //     }
+    //     lines = new List<GameObject>();
+    // }
 }

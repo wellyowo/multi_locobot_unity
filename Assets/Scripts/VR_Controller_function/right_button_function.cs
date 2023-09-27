@@ -57,4 +57,12 @@ public class right_button_function : MonoBehaviour
 
         rosSocket.Publish(Rightscondary_button, message_s);
     }
+    private void OnApplicationQuit()
+        {
+            rosSocket.Unadvertise(Rightprimary_button);
+            rosSocket.Unadvertise(Rightscondary_button);
+            rosSocket.Close();
+        }
+
+    
 }
