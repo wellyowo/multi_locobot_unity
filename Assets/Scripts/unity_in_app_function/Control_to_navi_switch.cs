@@ -6,8 +6,8 @@ public class Control_to_navi_switch : MonoBehaviour
 {
     public MeshRenderer leftCamera;
     public GameObject leftpointcloud;
-    public GameObject midpointcloud;
-    public GameObject rightpointcloud;
+    //public GameObject midpointcloud;
+    //public GameObject rightpointcloud;
     
 
     public ControllersManager controllerInput;
@@ -40,14 +40,14 @@ public class Control_to_navi_switch : MonoBehaviour
                 case 0:
                     leftCamera.enabled = true;
                     leftpointcloud.SetActive(true);
-                    midpointcloud.SetActive(true);
-                    rightpointcloud.SetActive(true);
+                    // midpointcloud.SetActive(true);
+                    // rightpointcloud.SetActive(true);
                     break;
                 case 1:
                     leftCamera.enabled = false;
                     leftpointcloud.SetActive(false);
-                    midpointcloud.SetActive(false);
-                    rightpointcloud.SetActive(false);
+                    // midpointcloud.SetActive(false);
+                    // rightpointcloud.SetActive(false);
                     break;
             
             }
