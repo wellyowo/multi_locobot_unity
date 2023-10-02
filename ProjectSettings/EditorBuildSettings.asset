@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Offline-Control-Robot-locobot6.unity
+    guid: 920c21a7a9477a74a8a936f43286d4b6
+  - enabled: 0
+    path: Assets/Scenes/Offline-Navigation-Robot-locobot6.unity
+    guid: 29374131c624c5942b93e4a087d7ab08
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 06e9c9445e59793459b99d3d07d5899c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 86363ca723a82e6498a50ee89e081574, type: 2}

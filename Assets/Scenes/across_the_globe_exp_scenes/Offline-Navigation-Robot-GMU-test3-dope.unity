@@ -5731,7 +5731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &390153810
 Transform:
   m_ObjectHideFlags: 0
@@ -14909,9 +14909,9 @@ MonoBehaviour:
   updateIP: ws://10.0.0.17:9090
   obj1: {fileID: 1117389348}
   topic_name: /dope/pose_Butter_baselink
-  offset_x: -0.07
+  offset_x: 0
   offset_y: 0
-  offset_z: -0.05
+  offset_z: 0
 --- !u!114 &1117389351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26956,9 +26956,9 @@ MonoBehaviour:
   updateIP: ws://10.0.0.17:9090
   obj1: {fileID: 1926272576}
   topic_name: /dope/pose_sugar_baselink
-  offset_x: -0.09
-  offset_y: -0.07
-  offset_z: -0.05
+  offset_x: 0
+  offset_y: 0
+  offset_z: 0
 --- !u!4 &1926272578
 Transform:
   m_ObjectHideFlags: 0
@@ -27426,7 +27426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &2005262605
 BoxCollider:
   m_ObjectHideFlags: 0

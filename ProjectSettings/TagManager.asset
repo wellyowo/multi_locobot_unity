@@ -8,6 +8,9 @@ TagManager:
   - static_cam
   - pointcloud
   - right_hand
+  - left_hand
+  - finger_r
+  - finger_l
   layers:
   - Default
   - TransparentFX

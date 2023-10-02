@@ -19,6 +19,18 @@ public class PoseForDope : MonoBehaviour
     private string RosBridgeServerUrl;
 
     public float offset_x = 0, offset_y = 0, offset_z = 0;
+    private bool isMessageReceived;
+    public bool IsMessageReceived
+    {
+        get
+        {
+            return isMessageReceived;
+        }
+    }
+
+    private int count = 0; // count if how long no dope message received then use kinematic mode.
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +47,10 @@ public class PoseForDope : MonoBehaviour
         obj1_position_unity = dope_unity_position;
         Quaternion dope_unity_rotation = R2U_Rotation(message.pose.orientation);
         obj1_rotation_unity = dope_unity_rotation;
+        count = 0;
+        isMessageReceived = true;
+
+
 
     }
 
@@ -65,6 +81,12 @@ public class PoseForDope : MonoBehaviour
     void Update()
     {
         obj1.transform.localPosition = obj1_position_unity;
-        obj1.transform.localRotation = obj1_rotation_unity;
+        obj1.transform.localRotation = obj1_rotation_unity; 
+        count++;
+        if(count > 100)
+        {
+            isMessageReceived = false;
+        }
+
     }
 }

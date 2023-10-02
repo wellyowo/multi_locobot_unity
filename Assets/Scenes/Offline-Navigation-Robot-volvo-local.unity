@@ -361,36 +361,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 21dd286f8405a8d4a9ca2621cec05044, type: 2}
---- !u!1 &30665229
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 30665230}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &30665230
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30665229}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1041, y: 0.2179, z: 0.0138}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &33607758
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,7 +926,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62219858}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57574a16cdc8b64408e42846c7ae13fd, type: 3}
   m_Name: 
@@ -979,7 +949,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://192.168.50.101:9090
 --- !u!1 &64486424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,13 +1088,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69347218}
-  m_LocalRotation: {x: -0.65211827, y: -0.20762148, z: 0.69360316, w: -0.22483297}
-  m_LocalPosition: {x: -0.46496812, y: 0.86344945, z: 0.43221352}
+  m_LocalRotation: {x: 0.6865971, y: 0.21519083, z: -0.6369318, w: 0.27675843}
+  m_LocalPosition: {x: -0.46873823, y: 0.682825, z: 0.43213087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390153810}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 144.46155, y: -265.54056, z: 2.8953083}
+  m_LocalEulerAnglesHint: {x: 139.14351, y: 87.31392, z: 4.326089}
 --- !u!1 &71817711
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,7 +5175,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://0.0.0.0:9090
+  RosBridgeServerUrl: ws://192.168.50.101:9090
 --- !u!114 &316520872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5677,7 +5647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07822b9b518cf241b735e04664abde3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WebSocketIP: ws://192.168.50.13:9090
+  WebSocketIP: ws://192.168.50.101:9090
   controllerInput: {fileID: 1769899863}
   Topic_name_pub: /cmd_vel_mux/input/teleop
   linear_scale: 0.25
@@ -5703,7 +5673,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385112463}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55c525aabec59a2479f439e6afaa4ef4, type: 3}
   m_Name: 
@@ -5720,7 +5690,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385112463}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bd0f6736d74ec84f88f1caada44738e, type: 3}
   m_Name: 
@@ -5745,7 +5715,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://10.0.0.19:9090
 --- !u!1 &390153809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6861,7 +6831,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://192.168.50.101:9090
 --- !u!114 &454487379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6874,7 +6844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0911cb3e8dd703409f7b3dcc17cc1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /publish_topic
+  Topic: /subscribe_topic
   TimeStep: 0
   SubscribedTransform: {fileID: 0}
   text_obj: {fileID: 669700577}
@@ -6924,7 +6894,6 @@ Transform:
   - {fileID: 1877910065}
   - {fileID: 833130454}
   - {fileID: 1195790394}
-  - {fileID: 1426345710}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11392,7 +11361,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://192.168.50.101:9090
 --- !u!23 &833130452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11400,7 +11369,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833130449}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13627,7 +13596,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://192.168.50.101:9090
 --- !u!114 &964843822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14879,7 +14848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8b945edb2d519c245a97580f7e58e34f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 8b945edb2d519c245a97580f7e58e34f, type: 3}
       propertyPath: m_LocalScale.x
@@ -14941,12 +14910,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7238399113598a4f9de55cb8d8b566d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateIP: ws://10.0.0.20:9090
+  updateIP: ws://192.168.50.13:9090
   obj1: {fileID: 1117389348}
   topic_name: /dope/pose_Butter_baselink
-  offset_x: 0
-  offset_y: -0.01
-  offset_z: 0
+  offset_x: -0.07
+  offset_y: 0
+  offset_z: -0.05
 --- !u!114 &1117389351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16319,7 +16288,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195790389}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16383,7 +16352,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://192.168.50.101:9090
 --- !u!4 &1195790394
 Transform:
   m_ObjectHideFlags: 0
@@ -16959,7 +16928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259440937}
   m_LocalRotation: {x: 0.7069991, y: -0.012340746, z: 0.012340746, w: 0.7069991}
-  m_LocalPosition: {x: 0.115, y: 0.225, z: 0.007}
+  m_LocalPosition: {x: 0.17, y: 0.22, z: 0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390153810}
@@ -19001,102 +18970,6 @@ Transform:
   m_Father: {fileID: 1722155775}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1426345709
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1426345710}
-  - component: {fileID: 1426345713}
-  - component: {fileID: 1426345712}
-  - component: {fileID: 1426345711}
-  m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1426345710
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426345709}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 461637289}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1426345711
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426345709}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1426345712
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426345709}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7d4c7fc11beb8ce449cac26909497143, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1426345713
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426345709}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1434286890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21279,10 +21152,7 @@ MonoBehaviour:
   desired_object:
   - {fileID: 964843819}
   - {fileID: 316520867}
-  - {fileID: 1877910060}
-  - {fileID: 833130449}
-  - {fileID: 1195790389}
-  updated_rosip: ws://192.168.50.160:9090
+  updated_rosip: ws://192.168.50.101:9090
 --- !u!1001 &1567632060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25249,7 +25119,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.160:9090
+  RosBridgeServerUrl: ws://192.168.50.1019090
 --- !u!23 &1877910063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25307,7 +25177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877910060}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.574, y: 0.5, z: 1.5}
+  m_LocalPosition: {x: 1.241, y: 0.5, z: 1.5}
   m_LocalScale: {x: 0.1, y: 1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 461637289}
@@ -27074,7 +26944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1926272577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27087,12 +26957,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7238399113598a4f9de55cb8d8b566d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateIP: ws://10.0.0.20:9090
+  updateIP: ws://192.168.50.13:9090
   obj1: {fileID: 1926272576}
   topic_name: /dope/pose_sugar_baselink
-  offset_x: -0.06
-  offset_y: -0.02
-  offset_z: 0
+  offset_x: -0.09
+  offset_y: -0.07
+  offset_z: -0.05
 --- !u!4 &1926272578
 Transform:
   m_ObjectHideFlags: 0
@@ -27260,7 +27130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941488556}
   m_LocalRotation: {x: 0.9230165, y: -0.024170015, z: 0.010051952, w: 0.3838689}
-  m_LocalPosition: {x: -0.025, y: 0.555, z: 0.03}
+  m_LocalPosition: {x: -0.021, y: 0.594, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390153810}
@@ -27631,7 +27501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005262604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.006, y: 0.091, z: 0.474}
+  m_LocalPosition: {x: 0.006, y: 0.07, z: 0.474}
   m_LocalScale: {x: 0.56, y: 0.001, z: 0.41}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28695,6 +28565,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 55748cde5723fde459093fdab9243897, type: 3}
   m_PrefabInstance: {fileID: 2080223957}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2080223960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080223959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4bec84e63548e4e9b3f61c0bacef37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &2080223961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28720,10 +28602,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 1
 --- !u!1 &2088771658
 GameObject:
   m_ObjectHideFlags: 0

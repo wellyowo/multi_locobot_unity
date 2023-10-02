@@ -5767,10 +5767,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 385112465}
-  - component: {fileID: 385112464}
   - component: {fileID: 385112468}
   - component: {fileID: 385112467}
   - component: {fileID: 385112466}
+  - component: {fileID: 385112464}
   m_Layer: 0
   m_Name: Base Control
   m_TagString: Untagged
@@ -5787,14 +5787,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 385112463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c07822b9b518cf241b735e04664abde3, type: 3}
+  m_Script: {fileID: 11500000, guid: 715869cd3ac5ddf45a3586dfb312d3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WebSocketIP: ws://192.168.50.47:9090
+  Topic: /cmd_vel_mux/input/teleop
+  linear_scale: 0.1
+  angular_scale: 0.6
   controllerInput: {fileID: 1769899863}
-  Topic_name_pub: /cmd_vel_mux/input/teleop
-  linear_scale: 0.25
-  angular_scale: 1
 --- !u!4 &385112465
 Transform:
   m_ObjectHideFlags: 0
@@ -5823,8 +5822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftCamera: {fileID: 833130452}
   leftpointcloud: {fileID: 69347218}
-  midpointcloud: {fileID: 1941488556}
-  rightpointcloud: {fileID: 1259440937}
   controllerInput: {fileID: 1769899863}
 --- !u!114 &385112467
 MonoBehaviour:
@@ -5843,6 +5840,9 @@ MonoBehaviour:
   pose:
   - 0.8
   - 0
+  Mid_pc: {fileID: 1941488556}
+  RGBD_Merger: {fileID: 1941488558}
+  navi_mode_depth_limit: 10000
 --- !u!114 &385112468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5858,7 +5858,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.47:9090
+  RosBridgeServerUrl: ws://192.168.50.50:9090
 --- !u!1 &390153809
 GameObject:
   m_ObjectHideFlags: 0
@@ -7034,8 +7034,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 669700579}
-  - {fileID: 1877910065}
   - {fileID: 833130454}
+  - {fileID: 1877910065}
   - {fileID: 1195790394}
   m_Father: {fileID: 62219859}
   m_RootOrder: 4
@@ -11959,7 +11959,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.47:9090
+  RosBridgeServerUrl: ws://192.168.50.127:9090
 --- !u!23 &833130452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12021,7 +12021,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 0.025000002}
   m_Children: []
   m_Father: {fileID: 461637289}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!114 &833130455
 MonoBehaviour:
@@ -16815,7 +16815,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.47:9090
+  RosBridgeServerUrl: ws://192.168.50.10:9090
 --- !u!4 &1195790394
 Transform:
   m_ObjectHideFlags: 0
@@ -21735,13 +21735,13 @@ MonoBehaviour:
   desired_object:
   - {fileID: 964843819}
   - {fileID: 316520867}
-  - {fileID: 385112463}
+  - {fileID: 833130449}
+  - {fileID: 1877910060}
+  - {fileID: 1195790389}
   - {fileID: 62219858}
   - {fileID: 454487375}
-  - {fileID: 1877910060}
-  - {fileID: 833130449}
-  - {fileID: 1195790389}
-  updated_rosip: ws://192.168.50.47:9090
+  - {fileID: 385112463}
+  updated_rosip: ws://192.168.50.50:9090
 --- !u!1001 &1567632060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25889,7 +25889,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://192.168.50.47:9090
+  RosBridgeServerUrl: ws://192.168.50.10:9090
 --- !u!23 &1877910063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25951,7 +25951,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 0.025000002}
   m_Children: []
   m_Father: {fileID: 461637289}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!114 &1877910066
 MonoBehaviour:
