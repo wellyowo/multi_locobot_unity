@@ -47,9 +47,17 @@ public class switch_locobot : MonoBehaviour
 
     private int robot_select;
     private bool RightSecBtnRelease;
+    private GameObject[] base_control;
+    private GameObject latency;
+    private GameObject top_cam;
+    private GameObject[] mid_pointcloud;
     
     private void Start()
     {
+        base_control = GameObject.FindGameObjectsWithTag("base_control");
+        latency = GameObject.FindGameObjectWithTag("latency");
+        top_cam = GameObject.FindGameObjectWithTag("top_cam");
+        mid_pointcloud = GameObject.FindGameObjectsWithTag("pointcloud");
         robot_select = UserRobotID;
         for (int i = 0; i < RobotSelectButton.Length; i++)
         {
@@ -74,16 +82,36 @@ public class switch_locobot : MonoBehaviour
 
     private void disable_robot(int robot_select)
     {
-        for (int i = 0; i < locobot.Length; i++)
+        if (robot_select == 5)
         {
-            if (i == robot_select - 1)
+            latency.SetActive(false);
+            top_cam.SetActive(false);
+            for (int i = 0; i < locobot.Length; i++)
             {
+                mid_pointcloud[i].SetActive(false);
                 locobot[i].SetActive(true);
+                base_control[i].SetActive(false);    
             }
-            else
+            
+        }
+        else
+        {
+            latency.SetActive(true);
+            top_cam.SetActive(true);
+            for (int i = 0; i < locobot.Length; i++)
             {
-                locobot[i].SetActive(false);
+                mid_pointcloud[i].SetActive(true);
+                if (i == robot_select - 1)
+                {
+                    locobot[i].SetActive(true);
+                }
+                else
+                {
+                    locobot[i].SetActive(false);
+                }
+                base_control[i].SetActive(true);
             }
+
         }
     }
     private void RobotSelect()
@@ -135,14 +163,20 @@ public class switch_locobot : MonoBehaviour
                         robot_select = 4;
                         disable_robot(robot_select);
                         break;
+                    case "global_view":
+                        RobotSelectButton[4].GetComponent<Renderer>().material = OnHitMaterial;
+                        robot_select = 5;
+                        disable_robot(robot_select);
+                        break;
+
                 }
             }
         }
         // XRTransform.GetComponent<UnityEngine.InputSystem.XR.TrackedPoseDriver>().enabled = true;
         CameraTransform.position = LoCobotTransform[robot_select - 1].position;
-        Debug.Log(robot_select + " pos:" + LoCobotTransform[robot_select - 1].position);
+        //Debug.Log(robot_select + " pos:" + LoCobotTransform[robot_select - 1].position);
         CameraTransform.rotation = LoCobotTransform[robot_select - 1].rotation;
-        Debug.Log(robot_select + " rot:" + LoCobotTransform[robot_select - 1].position);
+        //Debug.Log(robot_select + " rot:" + LoCobotTransform[robot_select - 1].position);
     
         
     }
