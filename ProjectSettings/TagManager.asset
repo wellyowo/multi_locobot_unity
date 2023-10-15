@@ -11,6 +11,15 @@ TagManager:
   - left_hand
   - finger_r
   - finger_l
+  - robot3
+  - robot2
+  - robot1
+  - robot4
+  - robot5
+  - global_view
+  - base_control
+  - top_cam
+  - latency
   layers:
   - Default
   - TransparentFX
